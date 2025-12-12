@@ -8,10 +8,6 @@ import appcode.table.TableActionEvent;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- *
- * @author coyha
- */
 public class PanelAction extends javax.swing.JPanel {
 
     /**
@@ -25,7 +21,7 @@ public class PanelAction extends javax.swing.JPanel {
         btnDelete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     }
 
-    
+
     public void initEvent(TableActionEvent event, int row){
         btnEdit.addActionListener(new ActionListener(){
             @Override

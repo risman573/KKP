@@ -7,10 +7,6 @@ package Menu;
 
 import appcode.Session;
 
-/**
- *
- * @author coyha
- */
 public class MenuHome extends javax.swing.JPanel {
 
     /**
@@ -18,7 +14,7 @@ public class MenuHome extends javax.swing.JPanel {
      */
     public MenuHome() {
         initComponents();
-        
+
         lblDashboard.setText("Hi, " + Session.getNama());
     }
 

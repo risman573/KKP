@@ -4,10 +4,6 @@
  * and open the template in the editor.
  */
 package KKP;
-/**
- *
- * @author coyha
- */
 
 import Auth.Login;
 public class KKP {
@@ -19,5 +15,5 @@ public class KKP {
         // TODO code application logic here
         new Login().setVisible(true);
     }
-    
+
 }

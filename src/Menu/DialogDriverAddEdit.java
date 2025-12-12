@@ -16,28 +16,24 @@ import java.awt.event.KeyEvent;
 import koneksi.Koneksi;
 import appcode.form.RoundedGradientButton;
 
-/**
- *
- * @author coyha
- */
 public class DialogDriverAddEdit extends javax.swing.JDialog {
     private Connection conn = new Koneksi().connect();
     /**
      * Creates new form DialogAddEdit
      */
-    
+
     int id = 0;
-    
+
     public DialogDriverAddEdit(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         txtJudul.setText("Tambah Driver");
     }
-    
+
     public void setData(int id){
         try {
             this.id = id;
-            
+
             String q = "SELECT * FROM drivers WHERE id = " + id;
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(q);
@@ -209,7 +205,7 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
     }//GEN-LAST:event_txtNamaActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-        String sql = 
+        String sql =
             "INSERT INTO drivers (drivername, phonenumber, isbackup, createdby) VALUES (?,?,?,?)";
 
         if (id > 0){
@@ -226,7 +222,7 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
             stat.setBoolean(3, isBackup);
 
             if (id > 0){
-                stat.setString(4, Session.getNama()); 
+                stat.setString(4, Session.getNama());
                 stat.setLong(5, id);
             } else {
                 stat.setString(4, Session.getNama());
@@ -258,7 +254,7 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

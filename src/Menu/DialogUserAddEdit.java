@@ -15,28 +15,24 @@ import java.awt.event.KeyEvent;
 import koneksi.Koneksi;
 import appcode.form.RoundedGradientButton;
 
-/**
- *
- * @author coyha
- */
 public class DialogUserAddEdit extends javax.swing.JDialog {
     private Connection conn = new Koneksi().connect();
     /**
      * Creates new form DialogAddEdit
      */
-    
+
     int id = 0;
-    
+
     public DialogUserAddEdit(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         txtJudul.setText("Tambah User");
     }
-    
+
     public void setData(int id){
         try {
             this.id = id;
-            
+
             String q = "SELECT * FROM users WHERE id = " + id;
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(q);
@@ -265,7 +261,7 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
                 stat.setString(5, txtAlamat.getText());
                 stat.setString(6, txtPassword.getText());
                 if (id > 0){
-                    stat.setLong(7, id);    
+                    stat.setLong(7, id);
                 }
                 stat.executeUpdate();
                 if (id > 0) {
@@ -295,7 +291,7 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

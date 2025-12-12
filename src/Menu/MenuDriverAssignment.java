@@ -33,10 +33,6 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
-/**
- *
- * @author coyha
- */
 public class MenuDriverAssignment extends javax.swing.JPanel {
 
     /**
@@ -214,7 +210,7 @@ public class MenuDriverAssignment extends javax.swing.JPanel {
         // TODO add your handling code here:
         loadData();
     }//GEN-LAST:event_txtSearchKeyReleased
-    
+
     private void loadData() {
         String sql = "SELECT " +
                 "a.ID AS assignment_id, " +
@@ -291,9 +287,9 @@ public class MenuDriverAssignment extends javax.swing.JPanel {
 
                 @Override
                 public void onDelete(int row) {
-                    int dialogResult = JOptionPane.showConfirmDialog(null, 
-                            "Hapus assignment driver?", 
-                            "Konfirmasi", 
+                    int dialogResult = JOptionPane.showConfirmDialog(null,
+                            "Hapus assignment driver?",
+                            "Konfirmasi",
                             JOptionPane.YES_NO_OPTION);
 
                     if (dialogResult == JOptionPane.YES_OPTION) {
@@ -322,18 +318,18 @@ public class MenuDriverAssignment extends javax.swing.JPanel {
         }
     }
 
-    
+
     private DialogDriverAssignmentAddEdit setupDialog() {
         DialogDriverAssignmentAddEdit dialog = new DialogDriverAssignmentAddEdit(null, true);
         dialog.addWindowListener(new WindowListener() {
             @Override
             public void windowOpened(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowClosing(WindowEvent e) {
-                
+
             }
 
             @Override
@@ -343,22 +339,22 @@ public class MenuDriverAssignment extends javax.swing.JPanel {
 
             @Override
             public void windowIconified(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowDeiconified(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowActivated(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowDeactivated(WindowEvent e) {
-                
+
             }
         });
         return dialog;

@@ -24,10 +24,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.awt.Color;
 
-/**
- *
- * @author coyha
- */
 public class MainPage extends javax.swing.JFrame {
 
     /**
@@ -44,12 +40,12 @@ public class MainPage extends javax.swing.JFrame {
         EMPTY_QUEUE
     }
     private ListMenu activeMenu = ListMenu.HOME;
-    
+
     public MainPage() {
         initComponents();
         this.fullName = Session.getNama();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        
+
         if (Session.getNama().equals("")){
             dispose();
         }
@@ -661,9 +657,9 @@ public class MainPage extends javax.swing.JFrame {
         menuTruck.setBackground(new Color(64,67,69));
         menuDriverAssigment.setBackground(new Color(64,67,69));
         menuEmptyQueue.setBackground(new Color(64,67,69));
-        
+
         activeMenu = menu;
-        
+
         switch (menu){
             case HOME:
                 menuHome.setBackground(new Color(195,176,136));
@@ -695,7 +691,7 @@ public class MainPage extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

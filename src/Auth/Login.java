@@ -24,28 +24,24 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import koneksi.Koneksi;
 
-/**
- *
- * @author coyha
- */
 public class Login extends javax.swing.JFrame {
 
     /**
      * Creates new form Login
      */
     private Connection conn = new Koneksi().connect();
-    
+
     public Login() {
         initComponents();
-//        setExtendedState(JFrame.MAXIMIZED_BOTH);     
-        
+//        setExtendedState(JFrame.MAXIMIZED_BOTH);
+
         txtUsername.setPlaceholder("Username");
         txtPassword.setPlaceholder("Password");
 
         txtUsername.addActionListener((ActionEvent evt) -> {
             btnSignIn.doClick();
         });
-        
+
         txtPassword.addActionListener((ActionEvent evt) -> {
             btnSignIn.doClick();
         });
@@ -187,7 +183,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_txtUsernameActionPerformed
 
     private void btnSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignInActionPerformed
-        // TODO add your handling code here:                                   
+        // TODO add your handling code here:
         // Validasi input kosong
         String username = txtUsername.getText().trim();
         String password = String.valueOf(txtPassword.getPassword()).trim();
@@ -224,7 +220,7 @@ public class Login extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

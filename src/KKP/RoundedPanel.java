@@ -8,10 +8,6 @@ package KKP;
 import java.awt.*;
 import javax.swing.*;
 
-/**
- *
- * @author coyha
- */
 public class RoundedPanel extends JPanel{
     private Color backgroundColor;
         private int cornerRadius = 15;

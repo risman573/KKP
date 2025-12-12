@@ -33,10 +33,6 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
-/**
- *
- * @author coyha
- */
 public class MenuTruck extends javax.swing.JPanel {
 
     /**
@@ -234,15 +230,15 @@ public class MenuTruck extends javax.swing.JPanel {
             "No. Plat",
             "Nama Truk"
         };
-        
+
         model = new DefaultTableModel(null, Baris);
         tblData.setModel(model);
-        
+
         try{
             Statement stat = conn.createStatement();
             ResultSet hasil = stat.executeQuery(sql);
             int num = 1;
-            
+
             while(hasil.next()){
                 String[] data = {
                     String.valueOf(num),
@@ -274,7 +270,7 @@ public class MenuTruck extends javax.swing.JPanel {
                             PreparedStatement stat = conn.prepareStatement(sql);
                             stat.setString(1, id);
                             stat.executeUpdate();
-                            
+
                             JOptionPane.showMessageDialog(null, "Data Berhasil Dihapus");
                             loadData();
                         }catch (SQLException e){
@@ -289,18 +285,18 @@ public class MenuTruck extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,e);
         }
     }
-    
+
     private DialogTruckAddEdit setupDialog() {
         DialogTruckAddEdit dialog = new DialogTruckAddEdit(null, true);
         dialog.addWindowListener(new WindowListener() {
             @Override
             public void windowOpened(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowClosing(WindowEvent e) {
-                
+
             }
 
             @Override
@@ -310,22 +306,22 @@ public class MenuTruck extends javax.swing.JPanel {
 
             @Override
             public void windowIconified(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowDeiconified(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowActivated(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowDeactivated(WindowEvent e) {
-                
+
             }
         });
         return dialog;

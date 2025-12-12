@@ -14,14 +14,10 @@ import java.awt.geom.Ellipse2D;
 import javax.swing.JButton;
 import javax.swing.border.EmptyBorder;
 
-/**
- *
- * @author coyha
- */
 public class ActionButton extends JButton {
 
     private boolean mousePress;
-    
+
     public ActionButton() {
         setContentAreaFilled(false);
         setBorder(new EmptyBorder(3,3,3,3));
@@ -36,7 +32,7 @@ public class ActionButton extends JButton {
             public void mouseReleased(MouseEvent e) {
                 mousePress = false;
             }
-            
+
         });
     }
 
@@ -55,9 +51,9 @@ public class ActionButton extends JButton {
             g2.setColor(new Color(199, 199, 199));
         }
         g2.fill(new Ellipse2D.Double(x, y, size, size));
-        
+
         g2.dispose();
         super.paintComponent(g);
     }
-    
+
 }

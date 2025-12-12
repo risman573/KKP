@@ -33,10 +33,6 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
-/**
- *
- * @author coyha
- */
 public class MenuUser extends javax.swing.JPanel {
 
     /**
@@ -243,21 +239,21 @@ public class MenuUser extends javax.swing.JPanel {
             "Alamat"
         };
 
-        
+
         model = new DefaultTableModel(null, Baris);
         tblData.setModel(model);
-        
+
         try{
             Statement stat = conn.createStatement();
             ResultSet hasil = stat.executeQuery(sql);
             int num = 1;
             while(hasil.next()){
                 String[] data={
-                    Integer.toString(num), 
-                    hasil.getString("id"), 
-                    hasil.getString("name"), 
-                    hasil.getString("username"), 
-                    hasil.getString("role"), 
+                    Integer.toString(num),
+                    hasil.getString("id"),
+                    hasil.getString("name"),
+                    hasil.getString("username"),
+                    hasil.getString("role"),
                     hasil.getString("email"),
                     hasil.getString("nohp"),
                     hasil.getString("alamat")
@@ -285,7 +281,7 @@ public class MenuUser extends javax.swing.JPanel {
                             PreparedStatement stat = conn.prepareStatement(sql);
                             stat.setString(1, id);
                             stat.executeUpdate();
-                            
+
                             JOptionPane.showMessageDialog(null, "Data Berhasil Dihapus");
                             loadData();
                         }catch (SQLException e){
@@ -300,18 +296,18 @@ public class MenuUser extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,e);
         }
     }
-    
+
     private DialogUserAddEdit setupDialog() {
         DialogUserAddEdit dialog = new DialogUserAddEdit(null, true);
         dialog.addWindowListener(new WindowListener() {
             @Override
             public void windowOpened(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowClosing(WindowEvent e) {
-                
+
             }
 
             @Override
@@ -321,22 +317,22 @@ public class MenuUser extends javax.swing.JPanel {
 
             @Override
             public void windowIconified(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowDeiconified(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowActivated(WindowEvent e) {
-                
+
             }
 
             @Override
             public void windowDeactivated(WindowEvent e) {
-                
+
             }
         });
         return dialog;

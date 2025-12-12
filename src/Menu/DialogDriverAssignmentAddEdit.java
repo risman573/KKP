@@ -24,21 +24,17 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- *
- * @author coyha
- */
 public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
     private Connection conn = new Koneksi().connect();
     /**
      * Creates new form DialogAddEdit
      */
-    
+
     int id = 0;
 
     List<String> listTruckId = new ArrayList<>();
     List<String> listDriverId = new ArrayList<>();
-    
+
     public DialogDriverAssignmentAddEdit(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -47,12 +43,12 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
         isiComboTruck();
         isiComboDriver();
     }
-    
+
     public void isiCombo(){
         isiComboTruck();
         isiComboDriver();
     }
-    
+
     public void isiComboTruck() {
         try {
             String sql =
@@ -82,7 +78,7 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(null, "Gagal load truck: " + e.getMessage());
         }
     }
-    
+
     public void isiComboDriver() {
         try {
             String sql =
@@ -402,9 +398,9 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
             st.setBoolean(3, isPrimary);
             st.setString(4, start);
             st.setString(5, end);
-            
+
             if (id > 0){
-                st.setString(6, Session.getNama()); 
+                st.setString(6, Session.getNama());
                 st.setInt(7, id);
             } else {
                 st.setString(6, Session.getNama());
@@ -424,7 +420,7 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(null, "Gagal Simpan: " + e.getMessage());
         }
     }//GEN-LAST:event_btnSaveActionPerformed
-    
+
     private void cmbTrukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTrukActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbTrukActionPerformed
@@ -436,7 +432,7 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
     private void cmbIsPrimaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbIsPrimaryActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbIsPrimaryActionPerformed
-                                                
+
 
     /**
      * @param args the command line arguments
@@ -445,7 +441,7 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
