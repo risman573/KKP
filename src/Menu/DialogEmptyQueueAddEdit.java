@@ -134,13 +134,13 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
                 String truck = rs.getString("TruckID");
                 String driver = rs.getString("DriverID");
                 txtCatatan.setText(rs.getString("Note"));
-                txtNomorKartu.setText(rs.getString("AssignedDeliveryCode"));
+//                txtNomorKartu.setText(rs.getString("AssignedDeliveryCode"));
 
                 Timestamp tsReported = rs.getTimestamp("ReportedAt");
                 if (tsReported != null) txtTanggalKosong.setDate(new Date(tsReported.getTime()));
 
-                Timestamp tsAssigned = rs.getTimestamp("AssignedAt");
-                if (tsAssigned != null) txtTanggalAssigned.setDate(new Date(tsAssigned.getTime()));
+//                Timestamp tsAssigned = rs.getTimestamp("AssignedAt");
+//                if (tsAssigned != null) txtTanggalAssigned.setDate(new Date(tsAssigned.getTime()));
 
                 cmbStatus.setSelectedItem(rs.getString("Status"));
 
@@ -201,10 +201,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         imgBukti = new appcode.form.CustomImagePicker();
         cmbStatus = new appcode.form.CustomComboBox();
         jLabel9 = new javax.swing.JLabel();
-        txtNomorKartu = new appcode.form.CustomTextField();
-        jLabel11 = new javax.swing.JLabel();
-        txtTanggalAssigned = new appcode.form.CustomDateChooser();
-        jLabel6 = new javax.swing.JLabel();
+        btnAssigned = new RoundedGradientButton("Simpan");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -281,7 +278,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         imgBukti.setLayout(imgBuktiLayout);
         imgBuktiLayout.setHorizontalGroup(
             imgBuktiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 224, Short.MAX_VALUE)
         );
         imgBuktiLayout.setVerticalGroup(
             imgBuktiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -309,24 +306,14 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Status");
 
-        txtNomorKartu.setBackground(new java.awt.Color(138, 138, 138));
-        txtNomorKartu.setForeground(new java.awt.Color(255, 255, 255));
-        txtNomorKartu.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtNomorKartu.setPlaceholder("Nomor Kartu");
-
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Assigned Delivery Code");
-
-        txtTanggalAssigned.setBackground(new java.awt.Color(138, 138, 138));
-        txtTanggalAssigned.setForeground(new java.awt.Color(255, 255, 255));
-        txtTanggalAssigned.setDateFormatString("d MMMM yyyy");
-        txtTanggalAssigned.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtTanggalAssigned.setPreferredSize(new java.awt.Dimension(45, 35));
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Tanggal Assigned");
+        btnAssigned.setBackground(new java.awt.Color(0, 91, 99));
+        btnAssigned.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnAssigned.setText("Assigned");
+        btnAssigned.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAssignedActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -335,42 +322,37 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(cmbTruk, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(txtTanggalKosong, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(cmbStatus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cmbDriver, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbTruk, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE)
-                            .addComponent(imgBukti, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNomorKartu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtTanggalAssigned, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbStatus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnSave)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnAssigned, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(cmbDriver, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imgBukti, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTanggalKosong, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(61, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(23, 23, 23)
                     .addComponent(txtJudul)
-                    .addContainerGap(389, Short.MAX_VALUE)))
+                    .addContainerGap(306, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -378,45 +360,40 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
                 .addGap(74, 74, 74)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel4)
                     .addComponent(jLabel9))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(cmbTruk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtTanggalKosong, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cmbTruk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(cmbStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel5))
+                        .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(cmbDriver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                                .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(27, 27, 27))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(imgBukti, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNomorKartu, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cmbDriver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel6)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(79, 79, 79)
+                        .addComponent(jLabel5))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtTanggalAssigned, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTanggalKosong, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnAssigned, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(imgBukti, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
@@ -429,7 +406,9 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -460,11 +439,11 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
             String truckId = listTruckId.get(cmbTruk.getSelectedIndex() - 1);
             String driverId = listDriverId.get(cmbDriver.getSelectedIndex() - 1);
             String note = txtCatatan.getText();
-            String assignedCode = txtNomorKartu.getText();
+//            String assignedCode = txtNomorKartu.getText();
             String status = cmbStatus.getSelectedItem().toString();
             java.sql.Date reportedDate = new java.sql.Date(txtTanggalKosong.getDate().getTime());
-            java.sql.Date assignedDate = txtTanggalAssigned.getDate() != null ?
-                    new java.sql.Date(txtTanggalAssigned.getDate().getTime()) : null;
+//            java.sql.Date assignedDate = txtTanggalAssigned.getDate() != null ?
+//                    new java.sql.Date(txtTanggalAssigned.getDate().getTime()) : null;
 
             // Handle image
             File imageFile = imgBukti.getSelectedFile();
@@ -489,7 +468,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
 
             PreparedStatement st;
             if (id > 0) {
-                String sql = "UPDATE truck_empty_queue SET TruckID=?, DriverID=?, Note=?, ReportedAt=?, PhotoUrl=?, Status=?, AssignedDeliveryCode=?, AssignedAt=?, UpdatedBy=?, UpdatedAt=NOW() WHERE QueueID=?";
+                String sql = "UPDATE truck_empty_queue SET TruckID=?, DriverID=?, Note=?, ReportedAt=?, PhotoUrl=?, Status=?, UpdatedBy=?, WHERE ID=?";
                 st = conn.prepareStatement(sql);
                 st.setString(1, truckId);
                 st.setString(2, driverId);
@@ -497,13 +476,11 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
                 st.setDate(4, reportedDate);
                 st.setString(5, photoPath);
                 st.setString(6, status);
-                st.setString(7, assignedCode);
-                st.setDate(8, assignedDate);
-                st.setString(9, Session.getNama());
-                st.setInt(10, id);
+                st.setString(7, Session.getNama());
+                st.setInt(8, id);
             } else {
-                String sql = "INSERT INTO truck_empty_queue (TruckID, DriverID, Note, ReportedAt, PhotoUrl, Status, AssignedDeliveryCode, AssignedAt, CreatedBy, CreatedAt) " +
-                             "VALUES (?,?,?,?,?,?,?,?,?,NOW())";
+                String sql = "INSERT INTO truck_empty_queue (TruckID, DriverID, Note, ReportedAt, PhotoUrl, Status, CreatedBy) " +
+                             "VALUES (?,?,?,?,?,?,?)";
                 st = conn.prepareStatement(sql);
                 st.setString(1, truckId);
                 st.setString(2, driverId);
@@ -511,9 +488,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
                 st.setDate(4, reportedDate);
                 st.setString(5, photoPath);
                 st.setString(6, status);
-                st.setString(7, assignedCode);
-                st.setDate(8, assignedDate);
-                st.setString(9, Session.getNama());
+                st.setString(7, Session.getNama());
             }
 
             st.executeUpdate();
@@ -538,7 +513,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         // TODO add your handling code here:
         if (id > 0) {
             try {
-                String sql = "SELECT Status FROM truck_empty_queue WHERE QueueID = ?";
+                String sql = "SELECT Status FROM truck_empty_queue WHERE ID = ?";
                 PreparedStatement ps = conn.prepareStatement(sql);
                 ps.setInt(1, id);
                 ResultSet rs = ps.executeQuery();
@@ -562,8 +537,54 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
     private void cmbStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbStatusActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbStatusActionPerformed
-                                                
 
+    private void btnAssignedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignedActionPerformed
+        // TODO add your handling code here:
+        DialogAssignQueue dialog = setupDialog();
+        dialog.setData(id, Session.getNama());
+        dialog.setVisible(true);
+    }//GEN-LAST:event_btnAssignedActionPerformed
+                                                
+    private DialogAssignQueue setupDialog() {
+        DialogAssignQueue dialog = new DialogAssignQueue(null, true);
+        dialog.addWindowListener(new WindowListener() {
+            @Override
+            public void windowOpened(WindowEvent e) {
+                
+            }
+
+            @Override
+            public void windowClosing(WindowEvent e) {
+                
+            }
+
+            @Override
+            public void windowClosed(WindowEvent e) {
+                dispose();
+            }
+
+            @Override
+            public void windowIconified(WindowEvent e) {
+                
+            }
+
+            @Override
+            public void windowDeiconified(WindowEvent e) {
+                
+            }
+
+            @Override
+            public void windowActivated(WindowEvent e) {
+                
+            }
+
+            @Override
+            public void windowDeactivated(WindowEvent e) {
+                
+            }
+        });
+        return dialog;
+    }
     /**
      * @param args the command line arguments
      */
@@ -1630,25 +1651,22 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAssigned;
     private javax.swing.JButton btnSave;
     private appcode.form.CustomComboBox cmbDriver;
     private appcode.form.CustomComboBox cmbStatus;
     private appcode.form.CustomComboBox cmbTruk;
     private appcode.form.CustomImagePicker imgBukti;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private appcode.form.CustomTextArea txtCatatan;
     private javax.swing.JLabel txtJudul;
-    private appcode.form.CustomTextField txtNomorKartu;
-    private appcode.form.CustomDateChooser txtTanggalAssigned;
     private appcode.form.CustomDateChooser txtTanggalKosong;
     // End of variables declaration//GEN-END:variables
 }

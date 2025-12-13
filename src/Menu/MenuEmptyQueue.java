@@ -514,11 +514,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         jTabbedPane1.getAccessibleContext().setAccessibleName("Petak");
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAddAssignedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddAssignedActionPerformed
-        // TODO add your handling code here:
-        setupDialog().setVisible(true);
-    }//GEN-LAST:event_btnAddAssignedActionPerformed
-
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
         // TODO add your handling code here:
         try {
@@ -596,10 +591,15 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSearchWaitingActionPerformed
 
+    private void btnAddAssignedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddAssignedActionPerformed
+        // TODO add your handling code here:
+        setupDialog().setVisible(true);
+    }//GEN-LAST:event_btnAddAssignedActionPerformed
+
     private void loadDataWaiting() {
         String sql =
             "SELECT q.ID, t.PlateNumber, d.DriverName, q.Note, q.ReportedAt, " +
-            "q.PhotoUrl, q.Status, q.AssignedDeliveryCode, q.AssignedAt, q.UpdatedAt " +
+            "q.PhotoUrl, q.Status, q.UpdatedAt " +
             "FROM Truck_Empty_Queue q " +
             "INNER JOIN Trucks t ON q.TruckID = t.ID " +
             "INNER JOIN Drivers d ON q.DriverID = d.ID " +
@@ -616,7 +616,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
         // Header tabel
         Object[] Header = { "No", "Action", "Plat", "Driver", "Note", "Tanggal Kosong",
-                            "Bukti Kosong", "Status", "Assigned Delivery Code", "Tanggal Assigned", "Updated At" };
+                            "Bukti Kosong", "Status", "Updated At" };
 
         model = new DefaultTableModel(null, Header) {
             @Override
@@ -644,8 +644,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                 String tanggalKosong = rs.getString("ReportedAt");
                 String photoPath = rs.getString("PhotoUrl");
                 String status = rs.getString("Status");
-                String assignedCode = rs.getString("AssignedDeliveryCode");
-                String tanggalAssigned = rs.getString("AssignedAt");
 
                 // Image preview
                 ImageIcon imageIcon = null;
@@ -663,8 +661,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                     tanggalKosong,
                     imageIcon,
                     status,
-                    assignedCode,
-                    tanggalAssigned,
                     rs.getString("UpdatedAt")
                 };
 
@@ -895,7 +891,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
         sql += "ORDER BY q.UpdatedAt DESC";
 
-        Object[] Header = { "No", "Action", "Plat", "Driver", "Note", "Updated At" };
+        Object[] Header = { "No", "Action", "Plat", "Driver", "Note", "Status", "Updated At" };
         model = new DefaultTableModel(null, Header);
         tblDataCancelled.setModel(model);
 
@@ -911,6 +907,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                     hasil.getString("PlateNumber"),  // Plat
                     hasil.getString("DriverName"),   // Driver
                     hasil.getString("Note"),         // Note
+                    hasil.getString("Status"),       // Status                    
                     hasil.getString("UpdatedAt")     // Updated At
                 };
                 model.addRow(data);
