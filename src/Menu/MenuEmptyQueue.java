@@ -92,14 +92,12 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblDataAssigned = new appcode.table.TableDark();
-        btnAddAssigned = new RoundedGradientButton("Tambah");
         btnReport = new RoundedGradientButton("Laporan");
         txtSearchAssigned = new appcode.form.CustomTextField();
         panelCancelled = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tblDataCancelled = new appcode.table.TableDark();
-        btnAddCancelled = new RoundedGradientButton("Tambah");
         btnReport2 = new RoundedGradientButton("Laporan");
         txtSearchCancelled = new appcode.form.CustomTextField();
 
@@ -300,14 +298,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblDataAssigned);
 
-        btnAddAssigned.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnAddAssigned.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddAssigned.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddAssignedActionPerformed(evt);
-            }
-        });
-
         btnReport.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnReport.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnReport.addActionListener(new java.awt.event.ActionListener() {
@@ -335,11 +325,9 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                 .addGroup(panelAssignedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1)
                     .addGroup(panelAssignedLayout.createSequentialGroup()
-                        .addGap(0, 437, Short.MAX_VALUE)
+                        .addGap(0, 433, Short.MAX_VALUE)
                         .addComponent(txtSearchAssigned, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnAddAssigned, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(133, 133, 133)
                         .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(panelAssignedLayout.createSequentialGroup()
@@ -355,9 +343,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelAssignedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelAssignedLayout.createSequentialGroup()
-                        .addGroup(panelAssignedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAddAssigned, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(txtSearchAssigned, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -428,14 +414,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         ));
         jScrollPane3.setViewportView(tblDataCancelled);
 
-        btnAddCancelled.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnAddCancelled.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddCancelled.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddCancelledActionPerformed(evt);
-            }
-        });
-
         btnReport2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnReport2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnReport2.addActionListener(new java.awt.event.ActionListener() {
@@ -467,11 +445,9 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                 .addGroup(panelCancelledLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane3)
                     .addGroup(panelCancelledLayout.createSequentialGroup()
-                        .addGap(0, 437, Short.MAX_VALUE)
+                        .addGap(0, 433, Short.MAX_VALUE)
                         .addComponent(txtSearchCancelled, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnAddCancelled, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(133, 133, 133)
                         .addComponent(btnReport2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -483,9 +459,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelCancelledLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelCancelledLayout.createSequentialGroup()
-                        .addGroup(panelCancelledLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnReport2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAddCancelled, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnReport2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(txtSearchCancelled, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -551,11 +525,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnReport1ActionPerformed
 
-    private void btnAddCancelledActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCancelledActionPerformed
-        // TODO add your handling code here:
-        setupDialog().setVisible(true);
-    }//GEN-LAST:event_btnAddCancelledActionPerformed
-
     private void btnReport2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReport2ActionPerformed
         // TODO add your handling code here:
         try {
@@ -590,11 +559,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
     private void txtSearchWaitingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchWaitingActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSearchWaitingActionPerformed
-
-    private void btnAddAssignedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddAssignedActionPerformed
-        // TODO add your handling code here:
-        setupDialog().setVisible(true);
-    }//GEN-LAST:event_btnAddAssignedActionPerformed
 
     private void loadDataWaiting() {
         String sql =
@@ -959,8 +923,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAddAssigned;
-    private javax.swing.JButton btnAddCancelled;
     private javax.swing.JButton btnAddWaiting;
     private javax.swing.JButton btnReport;
     private javax.swing.JButton btnReport1;
