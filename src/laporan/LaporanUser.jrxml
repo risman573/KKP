@@ -47,28 +47,34 @@
 		<queryString>
 			<![CDATA[SELECT * FROM users]]>
 		</queryString>
-		<field name="id" class="java.lang.Integer">
+		<field name="ID" class="java.lang.Integer">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
-		<field name="nama_lengkap" class="java.lang.String">
+		<field name="Username" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
-		<field name="username" class="java.lang.String">
+		<field name="Password" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
-		<field name="email" class="java.lang.String">
+		<field name="Name" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
-		<field name="no_hp" class="java.lang.String">
+		<field name="Email" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
-		<field name="alamat" class="java.lang.String">
+		<field name="NoHp" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
-		<field name="role" class="java.lang.String">
+		<field name="Alamat" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
-		<field name="password" class="java.lang.String">
+		<field name="Role" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="IsActive" class="java.lang.Boolean">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="CreatedAt" class="java.sql.Timestamp">
 			<fieldDescription><![CDATA[]]></fieldDescription>
 		</field>
 	</subDataset>
@@ -76,6 +82,36 @@
 	<queryString>
 		<![CDATA[SELECT * FROM users;]]>
 	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NoHp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Role" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IsActive" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CreatedAt" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -83,31 +119,31 @@
 		<band height="129" splitType="Stretch">
 			<image onErrorType="Icon">
 				<reportElement uuid="2c76676b-63bc-493f-8397-a8a78bbc82c3" key="" x="16" y="0" width="110" height="107"/>
-				<imageExpression><![CDATA["src/images/logo_alazhar.png"]]></imageExpression>
+				<imageExpression><![CDATA["src/images/logo_kkp.png"]]></imageExpression>
 			</image>
 			<line>
 				<reportElement uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9" positionType="Float" x="0" y="112" width="555" height="1"/>
 			</line>
 			<staticText>
-				<reportElement uuid="f0f68e88-9493-47b6-bea2-afcf1afc56bd" x="0" y="8" width="555" height="30"/>
+				<reportElement uuid="f0f68e88-9493-47b6-bea2-afcf1afc56bd" x="126" y="8" width="429" height="30"/>
 				<textElement textAlignment="Center" markup="none">
 					<font fontName="Times New Roman" size="20" isBold="true" isItalic="false"/>
 				</textElement>
-				<text><![CDATA[Al Azhar Memorial Garden]]></text>
+				<text><![CDATA[PT. EXYTOS MITRA ADITAMA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement uuid="ca1b2c60-1bab-4032-8065-18763fff9495" x="0" y="42" width="555" height="14"/>
+				<reportElement uuid="ca1b2c60-1bab-4032-8065-18763fff9495" x="126" y="42" width="429" height="14"/>
 				<textElement textAlignment="Center" markup="none">
 					<font fontName="Times New Roman" size="10" isItalic="false"/>
 				</textElement>
-				<text><![CDATA[Jl. Raya Peruri No.KM.53 - 54, Pinayungan]]></text>
+				<text><![CDATA[JL. Raya Narogong, Blok C/15-16]]></text>
 			</staticText>
 			<staticText>
-				<reportElement uuid="ca1b2c60-1bab-4032-8065-18763fff9495" x="0" y="62" width="555" height="14"/>
+				<reportElement uuid="ca1b2c60-1bab-4032-8065-18763fff9495" x="126" y="62" width="429" height="14"/>
 				<textElement textAlignment="Center" markup="none">
 					<font fontName="Times New Roman" size="10" isItalic="false"/>
 				</textElement>
-				<text><![CDATA[Telukjambe Timur, Karawang, Jawa Barat 41361]]></text>
+				<text><![CDATA[Kabupaten Bogor, Jawa Barat 16820]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -199,7 +235,7 @@
 									<font fontName="Times New Roman"/>
 									<paragraph leftIndent="4"/>
 								</textElement>
-								<textFieldExpression><![CDATA[$F{nama_lengkap}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -220,7 +256,7 @@
 									<font fontName="Times New Roman"/>
 									<paragraph leftIndent="4"/>
 								</textElement>
-								<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{Username}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -241,7 +277,7 @@
 									<font fontName="Times New Roman"/>
 									<paragraph leftIndent="4"/>
 								</textElement>
-								<textFieldExpression><![CDATA[$F{role}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{Role}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -259,7 +295,7 @@
 							<textField>
 								<reportElement uuid="10aa9b26-18a6-46e1-a98b-01e5537f76aa" x="0" y="0" width="90" height="30"/>
 								<textElement/>
-								<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -277,7 +313,7 @@
 							<textField>
 								<reportElement uuid="10aa9b26-18a6-46e1-a98b-01e5537f76aa" x="0" y="0" width="90" height="30"/>
 								<textElement/>
-								<textFieldExpression><![CDATA[$F{no_hp}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{NoHp}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -295,7 +331,7 @@
 							<textField>
 								<reportElement uuid="10aa9b26-18a6-46e1-a98b-01e5537f76aa" x="0" y="0" width="90" height="30"/>
 								<textElement/>
-								<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{Alamat}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>

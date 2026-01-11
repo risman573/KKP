@@ -197,7 +197,7 @@ public class MenuDriver extends javax.swing.JPanel {
             // TODO add your handling code here:
             HashMap parameter = new HashMap();
             parameter.put("USER",Session.getNama());
-            File report_file = new File("src/laporan/LaporanUser.jasper");
+            File report_file = new File("src/laporan/LaporanDriver.jasper");
             JasperReport jasperReport = (JasperReport) JRLoader.loadObject(report_file);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, conn);
             JasperViewer.viewReport(jasperPrint, false);

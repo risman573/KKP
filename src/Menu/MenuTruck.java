@@ -122,7 +122,7 @@ public class MenuTruck extends javax.swing.JPanel {
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Driver");
+        jLabel2.setText("Truk");
 
         btnReport.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnReport.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -197,7 +197,7 @@ public class MenuTruck extends javax.swing.JPanel {
             // TODO add your handling code here:
             HashMap parameter = new HashMap();
             parameter.put("USER",Session.getNama());
-            File report_file = new File("src/laporan/LaporanUser.jasper");
+            File report_file = new File("src/laporan/LaporanTruk.jasper");
             JasperReport jasperReport = (JasperReport) JRLoader.loadObject(report_file);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, conn);
             JasperViewer.viewReport(jasperPrint, false);

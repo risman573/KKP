@@ -112,7 +112,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Empty Queue");
+        jLabel3.setText("Queue Waiting");
 
         tblDataWaiting.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -204,22 +204,22 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         panelWaiting.setLayout(panelWaitingLayout);
         panelWaitingLayout.setHorizontalGroup(
             panelWaitingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelWaitingLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(671, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWaitingLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelWaitingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2)
                     .addGroup(panelWaitingLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 437, Short.MAX_VALUE)
                         .addComponent(txtSearchWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnAddWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnReport1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(panelWaitingLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelWaitingLayout.setVerticalGroup(
             panelWaitingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,7 +243,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Empty Queue");
+        jLabel2.setText("Delivery Order");
 
         tblDataAssigned.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -330,10 +330,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         panelAssigned.setLayout(panelAssignedLayout);
         panelAssignedLayout.setHorizontalGroup(
             panelAssignedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelAssignedLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAssignedLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelAssignedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -346,6 +342,10 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(panelAssignedLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelAssignedLayout.setVerticalGroup(
             panelAssignedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -371,7 +371,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Empty Queue");
+        jLabel4.setText("Cancel");
 
         tblDataCancelled.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -520,7 +520,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             // TODO add your handling code here:
             HashMap parameter = new HashMap();
             parameter.put("USER",Session.getNama());
-            File report_file = new File("src/laporan/LaporanBlokMakam.jasper");
+            File report_file = new File("src/laporan/LaporanDO.jasper");
             JasperReport jasperReport = (JasperReport) JRLoader.loadObject(report_file);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, conn);
             JasperViewer.viewReport(jasperPrint, false);
@@ -541,7 +541,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             // TODO add your handling code here:
             HashMap parameter = new HashMap();
             parameter.put("USER",Session.getNama());
-            File report_file = new File("src/laporan/LaporanLokasiMakam.jasper");
+            File report_file = new File("src/laporan/LaporanKosong.jasper");
             JasperReport jasperReport = (JasperReport) JRLoader.loadObject(report_file);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, conn);
             JasperViewer.viewReport(jasperPrint, false);
@@ -876,7 +876,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
     private void loadDataCancelled(){
         String sql =
-            "SELECT q.ID, t.PlateNumber, d.DriverName, q.Note, q.UpdatedAt " +
+            "SELECT q.ID, t.PlateNumber, d.DriverName, q.Note, q.UpdatedAt,q.Status, q.AssignedDeliveryCode, q.AssignedAt " +
             "FROM Truck_Empty_Queue q " +
             "INNER JOIN Trucks t ON q.TruckID = t.ID " +
             "INNER JOIN Drivers d ON q.DriverID = d.ID " +
