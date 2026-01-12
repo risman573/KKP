@@ -16,18 +16,10 @@ public class TableActionCellRender extends DefaultTableCellRenderer {
         Component comp = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
 
         PanelAction action = new PanelAction();
-        if (row % 2 == 0){
-            if (isSelected){
-                action.setBackground(new Color(33, 103, 153));
-            }else{
-                action.setBackground(new Color(50, 50, 50));
-            }
-        }else{
-            if (isSelected){
-                action.setBackground(new Color(29, 86, 127));
-            }else{
-                action.setBackground(new Color(30, 30, 30));
-            }
+        if (isSelected) {
+            action.setBackground(new Color(29, 86, 127)); // selected
+        } else {
+            action.setBackground(new Color(153, 153, 153)); // semua sama
         }
         return action;
     }

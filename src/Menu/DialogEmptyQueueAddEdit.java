@@ -206,7 +206,8 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(45, 48, 51));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtJudul.setForeground(new java.awt.Color(255, 255, 255));
@@ -225,7 +226,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
             }
         });
 
-        cmbTruk.setBackground(new java.awt.Color(138, 138, 138));
+        cmbTruk.setBackground(new java.awt.Color(102, 102, 102));
         cmbTruk.setForeground(new java.awt.Color(255, 255, 255));
         cmbTruk.setArrowColor(new java.awt.Color(204, 213, 209));
         cmbTruk.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -235,13 +236,13 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
             }
         });
 
-        txtTanggalKosong.setBackground(new java.awt.Color(138, 138, 138));
+        txtTanggalKosong.setBackground(new java.awt.Color(102, 102, 102));
         txtTanggalKosong.setForeground(new java.awt.Color(255, 255, 255));
         txtTanggalKosong.setDateFormatString("d MMMM yyyy");
         txtTanggalKosong.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtTanggalKosong.setPreferredSize(new java.awt.Dimension(45, 35));
 
-        cmbDriver.setBackground(new java.awt.Color(138, 138, 138));
+        cmbDriver.setBackground(new java.awt.Color(102, 102, 102));
         cmbDriver.setForeground(new java.awt.Color(255, 255, 255));
         cmbDriver.setArrowColor(new java.awt.Color(204, 213, 209));
         cmbDriver.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -267,13 +268,15 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Bukti Kosong");
 
-        txtCatatan.setBackground(new java.awt.Color(138, 138, 138));
+        txtCatatan.setBackground(new java.awt.Color(102, 102, 102));
         txtCatatan.setColumns(20);
         txtCatatan.setForeground(new java.awt.Color(255, 255, 255));
         txtCatatan.setRows(5);
         txtCatatan.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtCatatan.setPlaceholder("Catatan");
         jScrollPane1.setViewportView(txtCatatan);
+
+        imgBukti.setForeground(new java.awt.Color(102, 102, 102));
 
         javax.swing.GroupLayout imgBuktiLayout = new javax.swing.GroupLayout(imgBukti);
         imgBukti.setLayout(imgBuktiLayout);
@@ -286,7 +289,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
             .addGap(0, 150, Short.MAX_VALUE)
         );
 
-        cmbStatus.setBackground(new java.awt.Color(138, 138, 138));
+        cmbStatus.setBackground(new java.awt.Color(102, 102, 102));
         cmbStatus.setForeground(new java.awt.Color(255, 255, 255));
         cmbStatus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "WAITING", "ASSIGNED", "CANCELLED" }));
         cmbStatus.setArrowColor(new java.awt.Color(204, 213, 209));
@@ -318,7 +321,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
 
         btnCancel.setBackground(new java.awt.Color(0, 91, 99));
         btnCancel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnCancel.setText("Cancel");
+        btnCancel.setText("Cancelled");
         btnCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelActionPerformed(evt);
@@ -335,18 +338,15 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cmbTruk, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnSave)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnAssigned))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(cmbDriver, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnSave)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnAssigned)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCancel)))
+                        .addComponent(btnCancel))
+                    .addComponent(cmbDriver, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -355,7 +355,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtTanggalKosong, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(23, 23, 23)
@@ -555,7 +555,29 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
     }//GEN-LAST:event_btnAssignedActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:                                                        
+        int dialogResult = JOptionPane.showConfirmDialog(
+            this,
+            "Yakin ingin membatalkan antrian ini?",
+            "Konfirmasi",
+            JOptionPane.YES_NO_OPTION
+        );
+
+        if (dialogResult == JOptionPane.YES_OPTION) {
+            String sql = "UPDATE truck_empty_queue SET Status = ? WHERE Id = ?";
+
+            try {
+                PreparedStatement stat = conn.prepareStatement(sql);
+                stat.setString(1, "CANCELLED");
+                stat.setInt(2, this.id); // ← PAKAI ID DARI setData
+                stat.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Status berhasil diubah menjadi CANCELLED");
+                cmbStatus.setSelectedItem("CANCELLED"); // update UI
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(this, "Gagal update status: " + e.getMessage());
+            }
+        }
     }//GEN-LAST:event_btnCancelActionPerformed
                                                 
     private DialogAssignQueue setupDialog() {

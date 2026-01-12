@@ -78,7 +78,8 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(45, 48, 51));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtJudul.setForeground(new java.awt.Color(255, 255, 255));
@@ -117,7 +118,7 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Password");
 
-        txtNama.setBackground(new java.awt.Color(138, 138, 138));
+        txtNama.setBackground(new java.awt.Color(102, 102, 102));
         txtNama.setForeground(new java.awt.Color(255, 255, 255));
         txtNama.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNama.setPlaceholder("Nama");
@@ -127,17 +128,17 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
             }
         });
 
-        txtEmail.setBackground(new java.awt.Color(138, 138, 138));
+        txtEmail.setBackground(new java.awt.Color(102, 102, 102));
         txtEmail.setForeground(new java.awt.Color(255, 255, 255));
         txtEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtEmail.setPlaceholder("Email");
 
-        txtUsername.setBackground(new java.awt.Color(138, 138, 138));
+        txtUsername.setBackground(new java.awt.Color(102, 102, 102));
         txtUsername.setForeground(new java.awt.Color(255, 255, 255));
         txtUsername.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtUsername.setPlaceholder("Username");
 
-        txtNoHP.setBackground(new java.awt.Color(138, 138, 138));
+        txtNoHP.setBackground(new java.awt.Color(102, 102, 102));
         txtNoHP.setForeground(new java.awt.Color(255, 255, 255));
         txtNoHP.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNoHP.setPlaceholder("No HP");
@@ -147,12 +148,12 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
             }
         });
 
-        txtPassword.setBackground(new java.awt.Color(138, 138, 138));
+        txtPassword.setBackground(new java.awt.Color(102, 102, 102));
         txtPassword.setForeground(new java.awt.Color(255, 255, 255));
         txtPassword.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtPassword.setPlaceholder("Password");
 
-        txtAlamat.setBackground(new java.awt.Color(138, 138, 138));
+        txtAlamat.setBackground(new java.awt.Color(102, 102, 102));
         txtAlamat.setColumns(20);
         txtAlamat.setForeground(new java.awt.Color(255, 255, 255));
         txtAlamat.setRows(5);

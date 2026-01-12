@@ -56,7 +56,8 @@ public class DialogAssignQueue extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(45, 48, 51));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtJudul.setForeground(new java.awt.Color(255, 255, 255));
@@ -75,7 +76,7 @@ public class DialogAssignQueue extends javax.swing.JDialog {
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Assigned Delivery Code");
 
-        txtDeliveryCode.setBackground(new java.awt.Color(138, 138, 138));
+        txtDeliveryCode.setBackground(new java.awt.Color(102, 102, 102));
         txtDeliveryCode.setForeground(new java.awt.Color(255, 255, 255));
         txtDeliveryCode.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtDeliveryCode.setPlaceholder("Code");
@@ -84,7 +85,7 @@ public class DialogAssignQueue extends javax.swing.JDialog {
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Tanggal Assigned");
 
-        txtTanggalAssigned.setBackground(new java.awt.Color(138, 138, 138));
+        txtTanggalAssigned.setBackground(new java.awt.Color(102, 102, 102));
         txtTanggalAssigned.setForeground(new java.awt.Color(255, 255, 255));
         txtTanggalAssigned.setDateFormatString("d MMMM yyyy");
         txtTanggalAssigned.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N

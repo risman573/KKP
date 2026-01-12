@@ -101,11 +101,13 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         btnReport2 = new RoundedGradientButton("Laporan");
         txtSearchCancelled = new appcode.form.CustomTextField();
 
-        setBackground(new java.awt.Color(45, 48, 51));
+        setBackground(new java.awt.Color(153, 153, 153));
+        setForeground(new java.awt.Color(102, 102, 102));
 
         jTabbedPane1.setForeground(new java.awt.Color(204, 102, 0));
 
-        panelWaiting.setBackground(new java.awt.Color(45, 48, 51));
+        panelWaiting.setBackground(new java.awt.Color(153, 153, 153));
+        panelWaiting.setForeground(new java.awt.Color(102, 102, 102));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -183,7 +185,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             }
         });
 
-        txtSearchWaiting.setBackground(new java.awt.Color(138, 138, 138));
+        txtSearchWaiting.setBackground(new java.awt.Color(102, 102, 102));
         txtSearchWaiting.setForeground(new java.awt.Color(255, 255, 255));
         txtSearchWaiting.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSearchWaiting.setPlaceholder("Cari");
@@ -236,7 +238,8 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("WAITING", panelWaiting);
 
-        panelAssigned.setBackground(new java.awt.Color(45, 48, 51));
+        panelAssigned.setBackground(new java.awt.Color(153, 153, 153));
+        panelAssigned.setForeground(new java.awt.Color(102, 102, 102));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -350,9 +353,10 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                 .addContainerGap(108, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("ASSIGNED", panelAssigned);
+        jTabbedPane1.addTab("DELIVERY ORDER", panelAssigned);
 
-        panelCancelled.setBackground(new java.awt.Color(45, 48, 51));
+        panelCancelled.setBackground(new java.awt.Color(153, 153, 153));
+        panelCancelled.setForeground(new java.awt.Color(102, 102, 102));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -677,7 +681,6 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         }
     }
 
-
     private DialogEmptyQueueAddEdit setupDialog() {
         DialogEmptyQueueAddEdit dialog = new DialogEmptyQueueAddEdit(null, true);
         dialog.addWindowListener(new WindowListener() {
@@ -719,7 +722,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         return dialog;
     }
 
-   private void loadDataAssigned() {
+    private void loadDataAssigned() {
         String sql =
             "SELECT q.ID, t.PlateNumber, d.DriverName, q.Note, q.ReportedAt, " +
             "q.PhotoUrl, q.Status, q.AssignedDeliveryCode, q.AssignedAt, q.UpdatedAt " +
@@ -777,7 +780,8 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
                 Object[] data = {
                     num,
-                    rs.getString("ID"),             // Action
+//                    rs.getString("ID"),             // Action
+                    "No Action",                // Action (KETERANGAN)
                     rs.getString("PlateNumber"),
                     rs.getString("DriverName"),
                     rs.getString("Note"),
@@ -793,49 +797,66 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                 num++;
             }
 
-            // Action Edit/Delete
-            TableActionEvent actionEvent = new TableActionEvent() {
-                @Override
-                public void onEdit(int row) {
-                    DialogEmptyQueueAddEdit dialog = setupDialog();
-                    dialog.setData(Integer.parseInt(model.getValueAt(row, 1).toString()));
-                    dialog.setVisible(true);
-                }
-
-                @Override
-                public void onDelete(int row) {
-                    int confirm = JOptionPane.showConfirmDialog(
-                            null,
-                            "Konfirmasi hapus antrian?",
-                            "Warning",
-                            JOptionPane.YES_NO_OPTION
-                    );
-
-                    if (confirm == JOptionPane.YES_OPTION) {
-                        String queueId = model.getValueAt(row, 1).toString();
-                        try {
-                            String sqlDelete = "DELETE FROM Truck_Empty_Queue WHERE ID = ?";
-                            PreparedStatement ps = conn.prepareStatement(sqlDelete);
-                            ps.setString(1, queueId);
-                            ps.executeUpdate();
-                            ps.close();
-
-                            JOptionPane.showMessageDialog(null, "Queue Berhasil Dihapus");
-                            loadDataAssigned();
-
-                        } catch (SQLException e) {
-                            JOptionPane.showMessageDialog(null, "Queue Gagal Dihapus: " + e.getMessage());
-                        }
-                    }
-                }
-            };
-
-            tblDataAssigned.getColumnModel().getColumn(1).setCellRenderer(new TableActionCellRender());
-            tblDataAssigned.getColumnModel().getColumn(1).setCellEditor(new TableActionCellEditor(actionEvent));
+//            // Action Edit/Delete
+//            TableActionEvent actionEvent = new TableActionEvent() {
+//                @Override
+//                public void onEdit(int row) {
+//                    DialogAssignQueue dialog = setupDialogAssign();
+//
+//                    int queueId = Integer.parseInt(model.getValueAt(row, 1).toString());
+//                    String userId = Session.getNama(); // ambil dari session login
+//
+//                    dialog.setData(queueId, userId);
+//                    dialog.setVisible(true);
+//                }
+//
+//                @Override
+//                public void onDelete(int row) {
+//                    int confirm = JOptionPane.showConfirmDialog(
+//                            null,
+//                            "Konfirmasi hapus antrian?",
+//                            "Warning",
+//                            JOptionPane.YES_NO_OPTION
+//                    );
+//
+//                    if (confirm == JOptionPane.YES_OPTION) {
+//                        String queueId = model.getValueAt(row, 1).toString();
+//                        try {
+//                            String sqlDelete = "DELETE FROM Truck_Empty_Queue WHERE ID = ?";
+//                            PreparedStatement ps = conn.prepareStatement(sqlDelete);
+//                            ps.setString(1, queueId);
+//                            ps.executeUpdate();
+//                            ps.close();
+//
+//                            JOptionPane.showMessageDialog(null, "Queue Berhasil Dihapus");
+//                            loadDataAssigned();
+//
+//                        } catch (SQLException e) {
+//                            JOptionPane.showMessageDialog(null, "Queue Gagal Dihapus: " + e.getMessage());
+//                        }
+//                    }
+//                }
+//            };
+//
+//            tblDataAssigned.getColumnModel().getColumn(1).setCellRenderer(new TableActionCellRender());
+//            tblDataAssigned.getColumnModel().getColumn(1).setCellEditor(new TableActionCellEditor(actionEvent));
 
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
+    }
+                              
+    private DialogAssignQueue setupDialogAssign() {
+     DialogAssignQueue dialog = new DialogAssignQueue(null, true);
+
+     dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+         @Override
+         public void windowClosed(WindowEvent e) {
+             loadDataAssigned(); // REFRESH setelah edit
+         }
+     });
+
+     return dialog;
     }
 
     private void loadDataCancelled(){
@@ -867,7 +888,8 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             while(hasil.next()){
                 String[] data = {
                     Integer.toString(num),           // No
-                    hasil.getString("ID"),           // Action (ID)
+//                    hasil.getString("ID"),           // Action (ID)
+                    "No Action",                // Action (KETERANGAN)
                     hasil.getString("PlateNumber"),  // Plat
                     hasil.getString("DriverName"),   // Driver
                     hasil.getString("Note"),         // Note
@@ -878,44 +900,44 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                 num++;
             }
 
-            TableActionEvent actionEvent = new TableActionEvent() {
-                @Override
-                public void onEdit(int row) {
-                    DialogEmptyQueueAddEdit dialog = setupDialog();
-                    dialog.setData(Integer.parseInt(model.getValueAt(row, 1).toString()));
-                    dialog.setVisible(true);
-                }
-
-                @Override
-                public void onDelete(int row) {
-                    int confirm = JOptionPane.showConfirmDialog(
-                            null,
-                            "Konfirmasi hapus antrian?",
-                            "Warning",
-                            JOptionPane.YES_NO_OPTION
-                    );
-
-                    if(confirm == JOptionPane.YES_OPTION){
-                        String queueId = model.getValueAt(row, 1).toString();
-                        try {
-                            String sqlDelete = "DELETE FROM Truck_Empty_Queue WHERE ID = ?";
-                            PreparedStatement ps = conn.prepareStatement(sqlDelete);
-                            ps.setString(1, queueId);
-                            ps.executeUpdate();
-                            ps.close();
-
-                            JOptionPane.showMessageDialog(null, "Queue Berhasil Dihapus");
-                            loadDataCancelled();
-
-                        } catch (SQLException e) {
-                            JOptionPane.showMessageDialog(null, "Queue Gagal Dihapus: " + e.getMessage());
-                        }
-                    }
-                }
-            };
-
-            tblDataCancelled.getColumnModel().getColumn(1).setCellRenderer(new TableActionCellRender());
-            tblDataCancelled.getColumnModel().getColumn(1).setCellEditor(new TableActionCellEditor(actionEvent));
+//            TableActionEvent actionEvent = new TableActionEvent() {
+//                @Override
+//                public void onEdit(int row) {
+//                    DialogEmptyQueueAddEdit dialog = setupDialog();
+//                    dialog.setData(Integer.parseInt(model.getValueAt(row, 1).toString()));
+//                    dialog.setVisible(true);
+//                }
+//
+//                @Override
+//                public void onDelete(int row) {
+//                    int confirm = JOptionPane.showConfirmDialog(
+//                            null,
+//                            "Konfirmasi hapus antrian?",
+//                            "Warning",
+//                            JOptionPane.YES_NO_OPTION
+//                    );
+//
+//                    if(confirm == JOptionPane.YES_OPTION){
+//                        String queueId = model.getValueAt(row, 1).toString();
+//                        try {
+//                            String sqlDelete = "DELETE FROM Truck_Empty_Queue WHERE ID = ?";
+//                            PreparedStatement ps = conn.prepareStatement(sqlDelete);
+//                            ps.setString(1, queueId);
+//                            ps.executeUpdate();
+//                            ps.close();
+//
+//                            JOptionPane.showMessageDialog(null, "Queue Berhasil Dihapus");
+//                            loadDataCancelled();
+//
+//                        } catch (SQLException e) {
+//                            JOptionPane.showMessageDialog(null, "Queue Gagal Dihapus: " + e.getMessage());
+//                        }
+//                    }
+//                }
+//            };
+//
+//            tblDataCancelled.getColumnModel().getColumn(1).setCellRenderer(new TableActionCellRender());
+//            tblDataCancelled.getColumnModel().getColumn(1).setCellEditor(new TableActionCellEditor(actionEvent));
 
         } catch(SQLException e){
             JOptionPane.showMessageDialog(null, e.getMessage());

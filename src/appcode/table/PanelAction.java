@@ -48,6 +48,9 @@ public class PanelAction extends javax.swing.JPanel {
         btnEdit = new appcode.table.ActionButton();
         btnDelete = new appcode.table.ActionButton();
 
+        setBackground(new java.awt.Color(204, 204, 204));
+        setForeground(new java.awt.Color(102, 102, 102));
+
         btnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ic_edit.png"))); // NOI18N
         btnEdit.setPreferredSize(new java.awt.Dimension(23, 23));
         btnEdit.addActionListener(new java.awt.event.ActionListener() {

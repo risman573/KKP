@@ -72,14 +72,17 @@ public class Login extends javax.swing.JFrame {
         setBackground(new java.awt.Color(45, 48, 51));
         setForeground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(new java.awt.Color(45, 48, 51));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
         jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.Y_AXIS));
 
-        jpanelCenter.setBackground(new java.awt.Color(45, 48, 51));
+        jpanelCenter.setBackground(new java.awt.Color(153, 153, 153));
+        jpanelCenter.setForeground(new java.awt.Color(102, 102, 102));
         jpanelCenter.setLayout(new javax.swing.BoxLayout(jpanelCenter, javax.swing.BoxLayout.X_AXIS));
         jpanelCenter.add(filler5);
 
-        jpanelContent.setBackground(new java.awt.Color(45, 48, 51));
+        jpanelContent.setBackground(new java.awt.Color(153, 153, 153));
+        jpanelContent.setForeground(new java.awt.Color(102, 102, 102));
         jpanelContent.setPreferredSize(new java.awt.Dimension(200, 200));
 
         lblJudul2.setFont(new java.awt.Font("Tahoma", 0, 50)); // NOI18N
@@ -143,7 +146,7 @@ public class Login extends javax.swing.JFrame {
         jpanelContentLayout.setVerticalGroup(
             jpanelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpanelContentLayout.createSequentialGroup()
-                .addContainerGap(93, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblJudul)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblJudul2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -155,7 +158,7 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(btnSignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 163, Short.MAX_VALUE)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jpanelCenter.add(jpanelContent);

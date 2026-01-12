@@ -69,7 +69,8 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(45, 48, 51));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtJudul.setForeground(new java.awt.Color(255, 255, 255));
@@ -92,7 +93,7 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("No Hp");
 
-        txtNama.setBackground(new java.awt.Color(138, 138, 138));
+        txtNama.setBackground(new java.awt.Color(102, 102, 102));
         txtNama.setForeground(new java.awt.Color(255, 255, 255));
         txtNama.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNama.setPlaceholder("Nama");
@@ -102,7 +103,7 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
             }
         });
 
-        txtNoHP.setBackground(new java.awt.Color(138, 138, 138));
+        txtNoHP.setBackground(new java.awt.Color(102, 102, 102));
         txtNoHP.setForeground(new java.awt.Color(255, 255, 255));
         txtNoHP.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNoHP.setPlaceholder("No HP");
@@ -116,7 +117,7 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Back Up");
 
-        cmbBackUp.setBackground(new java.awt.Color(138, 138, 138));
+        cmbBackUp.setBackground(new java.awt.Color(102, 102, 102));
         cmbBackUp.setForeground(new java.awt.Color(255, 255, 255));
         cmbBackUp.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
         cmbBackUp.setArrowColor(new java.awt.Color(204, 213, 209));
@@ -165,13 +166,12 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(41, 41, 41)))
-                .addGap(18, 18, 18)
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
                 .addComponent(txtNoHP, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(24, 24, 24)
@@ -419,10 +419,6 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSave;
     private appcode.form.CustomComboBox cmbBackUp;
-    private appcode.form.CustomComboBox cmbJenazah;
-    private appcode.form.CustomComboBox cmbJenazah1;
-    private appcode.form.CustomComboBox cmbRole;
-    private appcode.form.CustomComboBox cmbRole1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

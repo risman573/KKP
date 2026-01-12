@@ -66,7 +66,8 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(45, 48, 51));
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtJudul.setForeground(new java.awt.Color(255, 255, 255));
@@ -89,7 +90,7 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Plate");
 
-        txtNama.setBackground(new java.awt.Color(138, 138, 138));
+        txtNama.setBackground(new java.awt.Color(102, 102, 102));
         txtNama.setForeground(new java.awt.Color(255, 255, 255));
         txtNama.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNama.setPlaceholder(" Nama Truk");
@@ -99,7 +100,7 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
             }
         });
 
-        txtPlat.setBackground(new java.awt.Color(138, 138, 138));
+        txtPlat.setBackground(new java.awt.Color(102, 102, 102));
         txtPlat.setForeground(new java.awt.Color(255, 255, 255));
         txtPlat.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtPlat.setPlaceholder("No Plat");
