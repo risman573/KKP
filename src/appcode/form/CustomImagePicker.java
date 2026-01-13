@@ -14,7 +14,7 @@ public class CustomImagePicker extends JPanel {
     private Image previewImage;
 
     private String placeholder = "Klik untuk pilih gambar…";
-    private Color placeholderColor = new Color(153, 153, 153);
+    private Color placeholderColor = new Color(204, 204, 204);
     private int borderRadius = 18;
     private Color borderColor = new Color(142, 142, 142);
     private Color borderFocusColor = new Color(4, 88, 167);
@@ -116,7 +116,7 @@ public class CustomImagePicker extends JPanel {
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         // background
-        g2.setColor(new Color(102, 102, 102));
+        g2.setColor(new Color(153, 153, 153));
         g2.fillRoundRect(0, 0, getWidth(), getHeight(), borderRadius, borderRadius);
 
         // preview image

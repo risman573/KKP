@@ -101,12 +101,12 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
         btnReport2 = new RoundedGradientButton("Laporan");
         txtSearchCancelled = new appcode.form.CustomTextField();
 
-        setBackground(new java.awt.Color(153, 153, 153));
+        setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(102, 102, 102));
 
         jTabbedPane1.setForeground(new java.awt.Color(204, 102, 0));
 
-        panelWaiting.setBackground(new java.awt.Color(153, 153, 153));
+        panelWaiting.setBackground(new java.awt.Color(255, 255, 255));
         panelWaiting.setForeground(new java.awt.Color(102, 102, 102));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
@@ -185,10 +185,11 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             }
         });
 
-        txtSearchWaiting.setBackground(new java.awt.Color(102, 102, 102));
+        txtSearchWaiting.setBackground(new java.awt.Color(153, 153, 153));
         txtSearchWaiting.setForeground(new java.awt.Color(255, 255, 255));
         txtSearchWaiting.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSearchWaiting.setPlaceholder("Cari");
+        txtSearchWaiting.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtSearchWaiting.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSearchWaitingActionPerformed(evt);
@@ -238,7 +239,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("WAITING", panelWaiting);
 
-        panelAssigned.setBackground(new java.awt.Color(153, 153, 153));
+        panelAssigned.setBackground(new java.awt.Color(255, 255, 255));
         panelAssigned.setForeground(new java.awt.Color(102, 102, 102));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -309,10 +310,11 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             }
         });
 
-        txtSearchAssigned.setBackground(new java.awt.Color(102, 102, 102));
+        txtSearchAssigned.setBackground(new java.awt.Color(153, 153, 153));
         txtSearchAssigned.setForeground(new java.awt.Color(255, 255, 255));
         txtSearchAssigned.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSearchAssigned.setPlaceholder("Cari");
+        txtSearchAssigned.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtSearchAssigned.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtSearchAssignedKeyReleased(evt);
@@ -356,7 +358,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("DELIVERY ORDER", panelAssigned);
 
-        panelCancelled.setBackground(new java.awt.Color(153, 153, 153));
+        panelCancelled.setBackground(new java.awt.Color(255, 255, 255));
         panelCancelled.setForeground(new java.awt.Color(102, 102, 102));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
@@ -427,10 +429,11 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             }
         });
 
-        txtSearchCancelled.setBackground(new java.awt.Color(102, 102, 102));
+        txtSearchCancelled.setBackground(new java.awt.Color(153, 153, 153));
         txtSearchCancelled.setForeground(new java.awt.Color(255, 255, 255));
         txtSearchCancelled.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSearchCancelled.setPlaceholder("Cari");
+        txtSearchCancelled.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtSearchCancelled.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtSearchCancelledKeyReleased(evt);

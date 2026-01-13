@@ -19,7 +19,7 @@ public class TableActionCellRender extends DefaultTableCellRenderer {
         if (isSelected) {
             action.setBackground(new Color(29, 86, 127)); // selected
         } else {
-            action.setBackground(new Color(153, 153, 153)); // semua sama
+            action.setBackground(new Color(204, 204, 204)); // semua sama
         }
         return action;
     }

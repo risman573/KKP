@@ -188,7 +188,7 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -208,7 +208,7 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
             }
         });
 
-        cmbTruk.setBackground(new java.awt.Color(102, 102, 102));
+        cmbTruk.setBackground(new java.awt.Color(153, 153, 153));
         cmbTruk.setForeground(new java.awt.Color(0, 0, 0));
         cmbTruk.setArrowColor(new java.awt.Color(204, 213, 209));
         cmbTruk.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -218,14 +218,14 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
             }
         });
 
-        txtTanggalMulai.setBackground(new java.awt.Color(102, 102, 102));
+        txtTanggalMulai.setBackground(new java.awt.Color(153, 153, 153));
         txtTanggalMulai.setForeground(new java.awt.Color(0, 0, 0));
         txtTanggalMulai.setDateFormatString("d MMMM yyyy");
         txtTanggalMulai.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtTanggalMulai.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtTanggalMulai.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtTanggalMulai.setPreferredSize(new java.awt.Dimension(45, 35));
 
-        cmbDriver.setBackground(new java.awt.Color(102, 102, 102));
+        cmbDriver.setBackground(new java.awt.Color(153, 153, 153));
         cmbDriver.setForeground(new java.awt.Color(0, 0, 0));
         cmbDriver.setArrowColor(new java.awt.Color(204, 213, 209));
         cmbDriver.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -239,7 +239,7 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Driver");
 
-        cmbIsPrimary.setBackground(new java.awt.Color(102, 102, 102));
+        cmbIsPrimary.setBackground(new java.awt.Color(153, 153, 153));
         cmbIsPrimary.setForeground(new java.awt.Color(0, 0, 0));
         cmbIsPrimary.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Primary", "Backup" }));
         cmbIsPrimary.setArrowColor(new java.awt.Color(204, 213, 209));
@@ -258,11 +258,11 @@ public class DialogDriverAssignmentAddEdit extends javax.swing.JDialog {
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Tanggal Mulai");
 
-        txtTanggalSelesai.setBackground(new java.awt.Color(102, 102, 102));
+        txtTanggalSelesai.setBackground(new java.awt.Color(153, 153, 153));
         txtTanggalSelesai.setForeground(new java.awt.Color(0, 0, 0));
         txtTanggalSelesai.setDateFormatString("d MMMM yyyy");
         txtTanggalSelesai.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txtTanggalSelesai.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtTanggalSelesai.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtTanggalSelesai.setPreferredSize(new java.awt.Dimension(45, 35));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N

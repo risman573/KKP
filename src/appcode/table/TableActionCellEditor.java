@@ -24,7 +24,7 @@ public class TableActionCellEditor extends AbstractCellEditor implements TableCe
         if (isSelected) {
             actionPanel.setBackground(new Color(29, 86, 127)); // selected
         } else {
-            actionPanel.setBackground(new Color(153, 153, 153)); // semua sama
+            actionPanel.setBackground(new Color(204, 204, 204)); // semua sama
         }
         this.currentValue = value;  // Simpan nilai asli (ID) jika perlu digunakan
         return actionPanel;

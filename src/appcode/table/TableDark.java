@@ -48,9 +48,9 @@ public class TableDark extends JTable {
     public void fixTable(JScrollPane scroll) {
         scroll.setVerticalScrollBar(new ScrollBarCustom());
         JPanel panel = new JPanel();
-        panel.setBackground(new Color(102, 102, 102));
+        panel.setBackground(new Color(153, 153, 153));
         scroll.setCorner(JScrollPane.UPPER_RIGHT_CORNER, panel);
-        scroll.getViewport().setBackground(new Color(102, 102, 102));
+        scroll.getViewport().setBackground(new Color(153, 153, 153));
         scroll.setBorder(BorderFactory.createLineBorder(new Color(60, 60, 60), 2));
     }
 
@@ -70,7 +70,7 @@ public class TableDark extends JTable {
             super.getTableCellRendererComponent(
                     table, value, selected, focus, row, column);
 
-            setBackground(new Color(102, 102, 102)); // HEADER
+            setBackground(new Color(153, 153, 153)); // HEADER
             setForeground(Color.BLACK);
             setFont(getFont().deriveFont(Font.BOLD, 12));
             setBorder(new EmptyBorder(0, 5, 0, 5));
@@ -102,7 +102,7 @@ public class TableDark extends JTable {
             if (selected) {
                 setBackground(new Color(29, 86, 127)); // selected
             } else {
-                setBackground(new Color(153, 153, 153)); // semua sama
+                setBackground(new Color(204, 204, 204)); // semua sama
             }
 
             setForeground(Color.BLACK);

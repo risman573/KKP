@@ -96,8 +96,8 @@ public class MenuHome extends javax.swing.JPanel {
         jLabel12 = new javax.swing.JLabel();
         lblUser3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 153, 153));
-        setForeground(new java.awt.Color(102, 102, 102));
+        setBackground(new java.awt.Color(255, 255, 255));
+        setForeground(new java.awt.Color(153, 153, 153));
 
         lblDashboard.setBackground(new java.awt.Color(255, 255, 255));
         lblDashboard.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -112,11 +112,11 @@ public class MenuHome extends javax.swing.JPanel {
         lblUser.setForeground(new java.awt.Color(0, 0, 0));
         lblUser.setText("Hi, ");
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 5));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153), 5));
 
         dataUser.setEditable(false);
-        dataUser.setBackground(new java.awt.Color(102, 102, 102));
+        dataUser.setBackground(new java.awt.Color(153, 153, 153));
         dataUser.setForeground(new java.awt.Color(0, 0, 0));
         dataUser.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataUser.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -132,7 +132,7 @@ public class MenuHome extends javax.swing.JPanel {
         jLabel2.setText("Total User");
 
         dataSupir.setEditable(false);
-        dataSupir.setBackground(new java.awt.Color(102, 102, 102));
+        dataSupir.setBackground(new java.awt.Color(153, 153, 153));
         dataSupir.setForeground(new java.awt.Color(0, 0, 0));
         dataSupir.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataSupir.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -148,7 +148,7 @@ public class MenuHome extends javax.swing.JPanel {
         jLabel3.setText("Total Driver");
 
         dataTruk.setEditable(false);
-        dataTruk.setBackground(new java.awt.Color(102, 102, 102));
+        dataTruk.setBackground(new java.awt.Color(153, 153, 153));
         dataTruk.setForeground(new java.awt.Color(0, 0, 0));
         dataTruk.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataTruk.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -164,7 +164,7 @@ public class MenuHome extends javax.swing.JPanel {
         jLabel4.setText("Total Truck");
 
         dataAssign.setEditable(false);
-        dataAssign.setBackground(new java.awt.Color(102, 102, 102));
+        dataAssign.setBackground(new java.awt.Color(153, 153, 153));
         dataAssign.setForeground(new java.awt.Color(0, 0, 0));
         dataAssign.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataAssign.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -197,8 +197,7 @@ public class MenuHome extends javax.swing.JPanel {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addComponent(dataUser, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(dataUser, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -218,7 +217,6 @@ public class MenuHome extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(dataAssign, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(55, 55, 55)))
                 .addContainerGap())
@@ -246,11 +244,11 @@ public class MenuHome extends javax.swing.JPanel {
                 .addGap(0, 12, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 5));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153), 5));
 
         dataWaiting.setEditable(false);
-        dataWaiting.setBackground(new java.awt.Color(102, 102, 102));
+        dataWaiting.setBackground(new java.awt.Color(153, 153, 153));
         dataWaiting.setForeground(new java.awt.Color(0, 0, 0));
         dataWaiting.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataWaiting.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -266,7 +264,7 @@ public class MenuHome extends javax.swing.JPanel {
         jLabel10.setText("Total Waiting");
 
         dataDO.setEditable(false);
-        dataDO.setBackground(new java.awt.Color(102, 102, 102));
+        dataDO.setBackground(new java.awt.Color(153, 153, 153));
         dataDO.setForeground(new java.awt.Color(0, 0, 0));
         dataDO.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataDO.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -282,7 +280,7 @@ public class MenuHome extends javax.swing.JPanel {
         jLabel11.setText("Total Delivery Order");
 
         dataCancel.setEditable(false);
-        dataCancel.setBackground(new java.awt.Color(102, 102, 102));
+        dataCancel.setBackground(new java.awt.Color(153, 153, 153));
         dataCancel.setForeground(new java.awt.Color(0, 0, 0));
         dataCancel.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataCancel.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -377,9 +375,8 @@ public class MenuHome extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
                 .addComponent(lblDashboard)
-                .addGap(18, 18, 18)
+                .addGap(57, 57, 57)
                 .addComponent(lblUser)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -422,15 +419,11 @@ public class MenuHome extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private appcode.form.CustomTextField dataAssign;
-    private appcode.form.CustomTextField dataAssign1;
     private appcode.form.CustomTextField dataCancel;
     private appcode.form.CustomTextField dataDO;
     private appcode.form.CustomTextField dataSupir;
-    private appcode.form.CustomTextField dataSupir1;
     private appcode.form.CustomTextField dataTruk;
-    private appcode.form.CustomTextField dataTruk1;
     private appcode.form.CustomTextField dataUser;
-    private appcode.form.CustomTextField dataUser1;
     private appcode.form.CustomTextField dataWaiting;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -440,17 +433,11 @@ public class MenuHome extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblDashboard;
     private javax.swing.JLabel lblUser;
     private javax.swing.JLabel lblUser1;
-    private javax.swing.JLabel lblUser2;
     private javax.swing.JLabel lblUser3;
     // End of variables declaration//GEN-END:variables
 }

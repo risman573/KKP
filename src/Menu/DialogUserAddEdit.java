@@ -43,7 +43,7 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
                 txtNoHP.setText(rs.getString("nohp"));
                 txtAlamat.setText(rs.getString("alamat"));
                 txtPassword.setText(rs.getString("password"));
-                txtJudul.setText("Edit User");
+                txtJudul.setText("Ubah User");
             }
         } catch (SQLException ex) {
             Logger.getLogger(DialogUserAddEdit.class.getName()).log(Level.SEVERE, null, ex);
@@ -78,7 +78,7 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -118,53 +118,53 @@ public class DialogUserAddEdit extends javax.swing.JDialog {
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Password");
 
-        txtNama.setBackground(new java.awt.Color(102, 102, 102));
+        txtNama.setBackground(new java.awt.Color(153, 153, 153));
         txtNama.setForeground(new java.awt.Color(0, 0, 0));
         txtNama.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNama.setPlaceholder("Nama");
-        txtNama.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtNama.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNamaActionPerformed(evt);
             }
         });
 
-        txtEmail.setBackground(new java.awt.Color(102, 102, 102));
+        txtEmail.setBackground(new java.awt.Color(153, 153, 153));
         txtEmail.setForeground(new java.awt.Color(0, 0, 0));
         txtEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtEmail.setPlaceholder("Email");
-        txtEmail.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtEmail.setPlaceholderColor(new java.awt.Color(204, 204, 204));
 
-        txtUsername.setBackground(new java.awt.Color(102, 102, 102));
+        txtUsername.setBackground(new java.awt.Color(153, 153, 153));
         txtUsername.setForeground(new java.awt.Color(0, 0, 0));
         txtUsername.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtUsername.setPlaceholder("Username");
-        txtUsername.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtUsername.setPlaceholderColor(new java.awt.Color(204, 204, 204));
 
-        txtNoHP.setBackground(new java.awt.Color(102, 102, 102));
+        txtNoHP.setBackground(new java.awt.Color(153, 153, 153));
         txtNoHP.setForeground(new java.awt.Color(0, 0, 0));
         txtNoHP.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNoHP.setPlaceholder("No HP");
-        txtNoHP.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtNoHP.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtNoHP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNoHPActionPerformed(evt);
             }
         });
 
-        txtPassword.setBackground(new java.awt.Color(102, 102, 102));
+        txtPassword.setBackground(new java.awt.Color(153, 153, 153));
         txtPassword.setForeground(new java.awt.Color(0, 0, 0));
         txtPassword.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtPassword.setPlaceholder("Password");
-        txtPassword.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtPassword.setPlaceholderColor(new java.awt.Color(204, 204, 204));
 
-        txtAlamat.setBackground(new java.awt.Color(102, 102, 102));
+        txtAlamat.setBackground(new java.awt.Color(153, 153, 153));
         txtAlamat.setColumns(20);
         txtAlamat.setForeground(new java.awt.Color(0, 0, 0));
         txtAlamat.setRows(5);
         txtAlamat.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtAlamat.setPlaceholder("Masukan alamat");
-        txtAlamat.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtAlamat.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         jScrollPane1.setViewportView(txtAlamat);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

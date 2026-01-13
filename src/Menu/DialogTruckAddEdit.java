@@ -40,7 +40,7 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
             if (rs.next()){
                 txtNama.setText(rs.getString("truckname"));
                 txtPlat.setText(rs.getString("platenumber"));
-                txtJudul.setText("Edit Truk");
+                txtJudul.setText("Ubah Truk");
             }
         } catch (SQLException ex) {
             Logger.getLogger(DialogTruckAddEdit.class.getName()).log(Level.SEVERE, null, ex);
@@ -66,8 +66,8 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(153, 153, 153));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtJudul.setForeground(new java.awt.Color(0, 0, 0));
@@ -90,22 +90,22 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Plate");
 
-        txtNama.setBackground(new java.awt.Color(102, 102, 102));
-        txtNama.setForeground(new java.awt.Color(255, 255, 255));
+        txtNama.setBackground(new java.awt.Color(153, 153, 153));
+        txtNama.setForeground(new java.awt.Color(0, 0, 0));
         txtNama.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNama.setPlaceholder(" Nama Truk");
-        txtNama.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtNama.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNamaActionPerformed(evt);
             }
         });
 
-        txtPlat.setBackground(new java.awt.Color(102, 102, 102));
-        txtPlat.setForeground(new java.awt.Color(255, 255, 255));
+        txtPlat.setBackground(new java.awt.Color(153, 153, 153));
+        txtPlat.setForeground(new java.awt.Color(0, 0, 0));
         txtPlat.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtPlat.setPlaceholder("No Plat");
-        txtPlat.setPlaceholderColor(new java.awt.Color(153, 153, 153));
+        txtPlat.setPlaceholderColor(new java.awt.Color(204, 204, 204));
         txtPlat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPlatActionPerformed(evt);

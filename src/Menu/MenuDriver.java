@@ -62,7 +62,7 @@ public class MenuDriver extends javax.swing.JPanel {
         btnAdd = new RoundedGradientButton("Tambah");
         txtSearch = new appcode.form.CustomTextField();
 
-        setBackground(new java.awt.Color(153, 153, 153));
+        setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(102, 102, 102));
 
         tblData.setModel(new javax.swing.table.DefaultTableModel(
@@ -141,7 +141,7 @@ public class MenuDriver extends javax.swing.JPanel {
             }
         });
 
-        txtSearch.setBackground(new java.awt.Color(102, 102, 102));
+        txtSearch.setBackground(new java.awt.Color(153, 153, 153));
         txtSearch.setForeground(new java.awt.Color(255, 255, 255));
         txtSearch.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSearch.setPlaceholder("Cari");

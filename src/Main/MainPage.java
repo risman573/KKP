@@ -104,28 +104,28 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
-        panelMain.setBackground(new java.awt.Color(153, 153, 153));
-        panelMain.setForeground(new java.awt.Color(102, 102, 102));
+        panelMain.setBackground(new java.awt.Color(255, 255, 255));
+        panelMain.setForeground(new java.awt.Color(204, 204, 204));
         panelMain.setLayout(new java.awt.BorderLayout());
 
-        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel2.setForeground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel2.setForeground(new java.awt.Color(153, 153, 153));
         jPanel2.setPreferredSize(new java.awt.Dimension(300, 697));
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setForeground(new java.awt.Color(102, 102, 102));
+        jPanel1.setForeground(new java.awt.Color(153, 153, 153));
         jPanel1.setToolTipText("");
         jPanel1.setOpaque(false);
         jPanel1.setPreferredSize(new java.awt.Dimension(240, 570));
 
-        jLabel1.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo_kkp.png"))); // NOI18N
         jLabel1.setOpaque(true);
 
-        menuHome.setBackground(new java.awt.Color(102, 102, 102));
-        menuHome.setForeground(new java.awt.Color(102, 102, 102));
+        menuHome.setBackground(new java.awt.Color(153, 153, 153));
+        menuHome.setForeground(new java.awt.Color(153, 153, 153));
         menuHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -164,8 +164,9 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        menuUser.setBackground(new java.awt.Color(102, 102, 102));
-        menuUser.setForeground(new java.awt.Color(102, 102, 102));
+        menuUser.setBackground(new java.awt.Color(153, 153, 153));
+        menuUser.setForeground(new java.awt.Color(153, 153, 153));
+        menuUser.setToolTipText("");
         menuUser.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuUser.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -237,8 +238,8 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel39, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
         );
 
-        menuDriver.setBackground(new java.awt.Color(102, 102, 102));
-        menuDriver.setForeground(new java.awt.Color(102, 102, 102));
+        menuDriver.setBackground(new java.awt.Color(153, 153, 153));
+        menuDriver.setForeground(new java.awt.Color(153, 153, 153));
         menuDriver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuDriver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -277,8 +278,8 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        menuTruck.setBackground(new java.awt.Color(102, 102, 102));
-        menuTruck.setForeground(new java.awt.Color(102, 102, 102));
+        menuTruck.setBackground(new java.awt.Color(153, 153, 153));
+        menuTruck.setForeground(new java.awt.Color(153, 153, 153));
         menuTruck.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuTruck.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -317,8 +318,8 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        menuDriverAssigment.setBackground(new java.awt.Color(102, 102, 102));
-        menuDriverAssigment.setForeground(new java.awt.Color(102, 102, 102));
+        menuDriverAssigment.setBackground(new java.awt.Color(153, 153, 153));
+        menuDriverAssigment.setForeground(new java.awt.Color(153, 153, 153));
         menuDriverAssigment.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuDriverAssigment.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -357,8 +358,8 @@ public class MainPage extends javax.swing.JFrame {
             .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        menuEmptyQueue.setBackground(new java.awt.Color(102, 102, 102));
-        menuEmptyQueue.setForeground(new java.awt.Color(102, 102, 102));
+        menuEmptyQueue.setBackground(new java.awt.Color(153, 153, 153));
+        menuEmptyQueue.setForeground(new java.awt.Color(153, 153, 153));
         menuEmptyQueue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuEmptyQueue.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -450,11 +451,11 @@ public class MainPage extends javax.swing.JFrame {
 
         panelMain.add(jPanel2, java.awt.BorderLayout.LINE_START);
 
-        panelWrapper.setBackground(new java.awt.Color(153, 153, 153));
-        panelWrapper.setForeground(new java.awt.Color(102, 102, 102));
+        panelWrapper.setBackground(new java.awt.Color(255, 255, 255));
+        panelWrapper.setForeground(new java.awt.Color(153, 153, 153));
         panelWrapper.setLayout(new java.awt.BorderLayout());
 
-        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(102, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(646, 115));
 
@@ -471,7 +472,7 @@ public class MainPage extends javax.swing.JFrame {
 
         panelWrapper.add(jPanel3, java.awt.BorderLayout.PAGE_START);
 
-        jPanel4.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setForeground(new java.awt.Color(102, 102, 102));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -487,7 +488,7 @@ public class MainPage extends javax.swing.JFrame {
 
         panelWrapper.add(jPanel4, java.awt.BorderLayout.LINE_END);
 
-        jPanel6.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setForeground(new java.awt.Color(102, 102, 102));
         jPanel6.setPreferredSize(new java.awt.Dimension(50, 746));
 
@@ -504,7 +505,7 @@ public class MainPage extends javax.swing.JFrame {
 
         panelWrapper.add(jPanel6, java.awt.BorderLayout.LINE_START);
 
-        panelContent.setBackground(new java.awt.Color(153, 153, 153));
+        panelContent.setBackground(new java.awt.Color(255, 255, 255));
         panelContent.setForeground(new java.awt.Color(102, 102, 102));
         panelContent.setOpaque(false);
         panelContent.setLayout(new java.awt.BorderLayout());
@@ -564,7 +565,7 @@ public class MainPage extends javax.swing.JFrame {
     private void menuHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuHomeMouseExited
         // TODO add your handling code here:
         if (activeMenu != ListMenu.HOME){
-            menuHome.setBackground(new Color(102,102,102));
+            menuHome.setBackground(new Color(153,153,153));
         }
     }//GEN-LAST:event_menuHomeMouseExited
 
@@ -576,7 +577,7 @@ public class MainPage extends javax.swing.JFrame {
     private void menuUserMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuUserMouseExited
         // TODO add your handling code here:
         if (activeMenu != ListMenu.USER){
-            menuUser.setBackground(new Color(102,102,102));
+            menuUser.setBackground(new Color(153,153,153));
         }
     }//GEN-LAST:event_menuUserMouseExited
 
@@ -597,7 +598,7 @@ public class MainPage extends javax.swing.JFrame {
     private void menuDriverMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuDriverMouseExited
         // TODO add your handling code here:
         if (activeMenu != ListMenu.DRIVER){
-            menuDriver.setBackground(new Color(102,102,102));
+            menuDriver.setBackground(new Color(153,153,153));
         }
     }//GEN-LAST:event_menuDriverMouseExited
 
@@ -618,7 +619,7 @@ public class MainPage extends javax.swing.JFrame {
     private void menuTruckMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuTruckMouseExited
         // TODO add your handling code here:
         if (activeMenu != ListMenu.TRUCK){
-            menuTruck.setBackground(new Color(102,102,102));
+            menuTruck.setBackground(new Color(153,153,153));
         }
     }//GEN-LAST:event_menuTruckMouseExited
 
@@ -639,7 +640,7 @@ public class MainPage extends javax.swing.JFrame {
     private void menuDriverAssigmentMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuDriverAssigmentMouseExited
         // TODO add your handling code here:
         if (activeMenu != ListMenu.DRIVER_ASSIGNMENT){
-            menuDriverAssigment.setBackground(new Color(102,102,102));
+            menuDriverAssigment.setBackground(new Color(153,153,153));
         }
     }//GEN-LAST:event_menuDriverAssigmentMouseExited
 
@@ -660,17 +661,17 @@ public class MainPage extends javax.swing.JFrame {
     private void menuEmptyQueueMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuEmptyQueueMouseExited
         // TODO add your handling code here:
         if (activeMenu != ListMenu.EMPTY_QUEUE){
-            menuEmptyQueue.setBackground(new Color(102,102,102));
+            menuEmptyQueue.setBackground(new Color(153,153,153));
         }
     }//GEN-LAST:event_menuEmptyQueueMouseExited
 
     private void setActiveMenu(ListMenu menu){
-        menuHome.setBackground(new Color(102,102,102));
-        menuUser.setBackground(new Color(102,102,102));
-        menuDriver.setBackground(new Color(102,102,102));
-        menuTruck.setBackground(new Color(102,102,102));
-        menuDriverAssigment.setBackground(new Color(102,102,102));
-        menuEmptyQueue.setBackground(new Color(102,102,102));
+        menuHome.setBackground(new Color(153,153,153));
+        menuUser.setBackground(new Color(153,153,153));
+        menuDriver.setBackground(new Color(153,153,153));
+        menuTruck.setBackground(new Color(153,153,153));
+        menuDriverAssigment.setBackground(new Color(153,153,153));
+        menuEmptyQueue.setBackground(new Color(153,153,153));
 
         activeMenu = menu;
 
