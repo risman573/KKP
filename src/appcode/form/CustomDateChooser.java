@@ -9,7 +9,7 @@ import javax.swing.*;
 public class CustomDateChooser extends JDateChooser {
     private int borderRadius = 15;
     private String placeholder = "Pilih tanggal...";
-    private Color placeholderColor = new Color(204, 204, 204);
+    private Color placeholderColor = new Color(0, 0, 0);
     private boolean hasFocus = false;
     
     public CustomDateChooser() {
@@ -74,10 +74,10 @@ public class CustomDateChooser extends JDateChooser {
                 JTextField dateField = (JTextField) uiComponent;
                 dateField.setOpaque(false);
                 dateField.setBorder(BorderFactory.createEmptyBorder());
-                dateField.setCaretColor(Color.WHITE);
+                dateField.setCaretColor(Color.BLACK);
                 dateField.setBackground(new Color(255, 255, 255));
-                dateField.setForeground(Color.WHITE);
-                dateField.setDisabledTextColor(Color.WHITE);
+                dateField.setForeground(Color.BLACK);
+                dateField.setDisabledTextColor(Color.BLACK);
                 
                 // Add focus listeners
                 dateField.addFocusListener(new FocusListener() {
@@ -162,11 +162,11 @@ public void setEnabled(boolean enabled) {
         JTextField dateField = (JTextField) getDateEditor().getUiComponent();
 
         if (enabled) {
-            dateField.setForeground(Color.WHITE);
+            dateField.setForeground(Color.BLACK);
             // agar teks caret juga putih
-            dateField.setCaretColor(Color.WHITE);
+            dateField.setCaretColor(Color.BLACK);
         } else {
-            dateField.setDisabledTextColor(Color.WHITE);
+            dateField.setDisabledTextColor(Color.BLACK);
         }
     }
 

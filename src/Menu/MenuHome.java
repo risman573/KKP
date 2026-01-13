@@ -109,7 +109,7 @@ public class MenuHome extends javax.swing.JPanel {
 
         lblUser.setBackground(new java.awt.Color(255, 255, 255));
         lblUser.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        lblUser.setForeground(new java.awt.Color(255, 255, 255));
+        lblUser.setForeground(new java.awt.Color(0, 0, 0));
         lblUser.setText("Hi, ");
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
@@ -117,7 +117,7 @@ public class MenuHome extends javax.swing.JPanel {
 
         dataUser.setEditable(false);
         dataUser.setBackground(new java.awt.Color(102, 102, 102));
-        dataUser.setForeground(new java.awt.Color(255, 255, 255));
+        dataUser.setForeground(new java.awt.Color(0, 0, 0));
         dataUser.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataUser.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         dataUser.addActionListener(new java.awt.event.ActionListener() {
@@ -128,12 +128,12 @@ public class MenuHome extends javax.swing.JPanel {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Total User");
 
         dataSupir.setEditable(false);
         dataSupir.setBackground(new java.awt.Color(102, 102, 102));
-        dataSupir.setForeground(new java.awt.Color(255, 255, 255));
+        dataSupir.setForeground(new java.awt.Color(0, 0, 0));
         dataSupir.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataSupir.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         dataSupir.addActionListener(new java.awt.event.ActionListener() {
@@ -144,12 +144,12 @@ public class MenuHome extends javax.swing.JPanel {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Total Driver");
 
         dataTruk.setEditable(false);
         dataTruk.setBackground(new java.awt.Color(102, 102, 102));
-        dataTruk.setForeground(new java.awt.Color(255, 255, 255));
+        dataTruk.setForeground(new java.awt.Color(0, 0, 0));
         dataTruk.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataTruk.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         dataTruk.addActionListener(new java.awt.event.ActionListener() {
@@ -160,12 +160,12 @@ public class MenuHome extends javax.swing.JPanel {
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Total Truck");
 
         dataAssign.setEditable(false);
         dataAssign.setBackground(new java.awt.Color(102, 102, 102));
-        dataAssign.setForeground(new java.awt.Color(255, 255, 255));
+        dataAssign.setForeground(new java.awt.Color(0, 0, 0));
         dataAssign.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataAssign.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         dataAssign.addActionListener(new java.awt.event.ActionListener() {
@@ -176,12 +176,12 @@ public class MenuHome extends javax.swing.JPanel {
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Total Assignment");
 
         lblUser1.setBackground(new java.awt.Color(255, 255, 255));
         lblUser1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        lblUser1.setForeground(new java.awt.Color(255, 255, 255));
+        lblUser1.setForeground(new java.awt.Color(0, 0, 0));
         lblUser1.setText("Master");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -251,7 +251,7 @@ public class MenuHome extends javax.swing.JPanel {
 
         dataWaiting.setEditable(false);
         dataWaiting.setBackground(new java.awt.Color(102, 102, 102));
-        dataWaiting.setForeground(new java.awt.Color(255, 255, 255));
+        dataWaiting.setForeground(new java.awt.Color(0, 0, 0));
         dataWaiting.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataWaiting.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         dataWaiting.addActionListener(new java.awt.event.ActionListener() {
@@ -262,12 +262,12 @@ public class MenuHome extends javax.swing.JPanel {
 
         jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Total Waiting");
 
         dataDO.setEditable(false);
         dataDO.setBackground(new java.awt.Color(102, 102, 102));
-        dataDO.setForeground(new java.awt.Color(255, 255, 255));
+        dataDO.setForeground(new java.awt.Color(0, 0, 0));
         dataDO.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataDO.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         dataDO.addActionListener(new java.awt.event.ActionListener() {
@@ -278,12 +278,12 @@ public class MenuHome extends javax.swing.JPanel {
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Total Delivery Order");
 
         dataCancel.setEditable(false);
         dataCancel.setBackground(new java.awt.Color(102, 102, 102));
-        dataCancel.setForeground(new java.awt.Color(255, 255, 255));
+        dataCancel.setForeground(new java.awt.Color(0, 0, 0));
         dataCancel.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         dataCancel.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         dataCancel.addActionListener(new java.awt.event.ActionListener() {
@@ -294,12 +294,12 @@ public class MenuHome extends javax.swing.JPanel {
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Total Cancelled");
 
         lblUser3.setBackground(new java.awt.Color(255, 255, 255));
         lblUser3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        lblUser3.setForeground(new java.awt.Color(255, 255, 255));
+        lblUser3.setForeground(new java.awt.Color(0, 0, 0));
         lblUser3.setText("Queue");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);

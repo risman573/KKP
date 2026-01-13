@@ -10,12 +10,12 @@ public class CustomTextField extends JTextField {
     private Icon suffixIcon;
     private int borderRadius = 15;
     private String placeholder = "";
-    private Color placeholderColor = new Color(204, 204, 204);
+    private Color placeholderColor = new Color(0, 0, 0);
 
     public CustomTextField() {
         setOpaque(false);
         initBorder();
-        setCaretColor(Color.WHITE);
+        setCaretColor(Color.BLACK);
     }
 
     public Icon getPrefixIcon() {

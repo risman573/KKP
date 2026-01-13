@@ -73,11 +73,11 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
         jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        txtJudul.setForeground(new java.awt.Color(255, 255, 255));
+        txtJudul.setForeground(new java.awt.Color(0, 0, 0));
         txtJudul.setText("Tambah Driver");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nama");
 
         btnSave.setBackground(new java.awt.Color(0, 91, 99));
@@ -90,13 +90,14 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
         });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("No Hp");
 
         txtNama.setBackground(new java.awt.Color(102, 102, 102));
-        txtNama.setForeground(new java.awt.Color(255, 255, 255));
+        txtNama.setForeground(new java.awt.Color(0, 0, 0));
         txtNama.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNama.setPlaceholder("Nama");
+        txtNama.setPlaceholderColor(new java.awt.Color(153, 153, 153));
         txtNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNamaActionPerformed(evt);
@@ -104,9 +105,10 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
         });
 
         txtNoHP.setBackground(new java.awt.Color(102, 102, 102));
-        txtNoHP.setForeground(new java.awt.Color(255, 255, 255));
+        txtNoHP.setForeground(new java.awt.Color(0, 0, 0));
         txtNoHP.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNoHP.setPlaceholder("No HP");
+        txtNoHP.setPlaceholderColor(new java.awt.Color(153, 153, 153));
         txtNoHP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNoHPActionPerformed(evt);
@@ -114,11 +116,11 @@ public class DialogDriverAddEdit extends javax.swing.JDialog {
         });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Back Up");
 
         cmbBackUp.setBackground(new java.awt.Color(102, 102, 102));
-        cmbBackUp.setForeground(new java.awt.Color(255, 255, 255));
+        cmbBackUp.setForeground(new java.awt.Color(0, 0, 0));
         cmbBackUp.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tidak", "Ya" }));
         cmbBackUp.setArrowColor(new java.awt.Color(204, 213, 209));
         cmbBackUp.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N

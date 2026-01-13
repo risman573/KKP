@@ -140,7 +140,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ic_home.png"))); // NOI18N
 
@@ -180,7 +180,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ic_user.png"))); // NOI18N
 
@@ -253,7 +253,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ic_user.png"))); // NOI18N
 
@@ -293,7 +293,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setForeground(new java.awt.Color(0, 0, 0));
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ic_circle.png"))); // NOI18N
 
@@ -333,7 +333,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setForeground(new java.awt.Color(0, 0, 0));
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ic_circle.png"))); // NOI18N
 
@@ -373,7 +373,7 @@ public class MainPage extends javax.swing.JFrame {
         });
 
         jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setForeground(new java.awt.Color(0, 0, 0));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ic_circle.png"))); // NOI18N
 
@@ -445,7 +445,7 @@ public class MainPage extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 697, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 979, Short.MAX_VALUE)
         );
 
         panelMain.add(jPanel2, java.awt.BorderLayout.LINE_START);

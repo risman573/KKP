@@ -180,7 +180,7 @@ public class CustomComboBox<E> extends JComboBox<E> {
                 
                 if (isSelected) {
                     label.setBackground(new Color(4, 88, 167, 200));
-                    label.setForeground(Color.WHITE);
+                    label.setForeground(Color.BLACK);
                 } else {
                     label.setBackground(new Color(255, 255, 255));
                     label.setForeground(Color.BLACK);

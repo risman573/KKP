@@ -70,11 +70,11 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
         jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        txtJudul.setForeground(new java.awt.Color(255, 255, 255));
+        txtJudul.setForeground(new java.awt.Color(0, 0, 0));
         txtJudul.setText("Tambah Truk");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nama");
 
         btnSave.setBackground(new java.awt.Color(0, 91, 99));
@@ -87,13 +87,14 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
         });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Plate");
 
         txtNama.setBackground(new java.awt.Color(102, 102, 102));
         txtNama.setForeground(new java.awt.Color(255, 255, 255));
         txtNama.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtNama.setPlaceholder(" Nama Truk");
+        txtNama.setPlaceholderColor(new java.awt.Color(153, 153, 153));
         txtNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNamaActionPerformed(evt);
@@ -104,6 +105,7 @@ public class DialogTruckAddEdit extends javax.swing.JDialog {
         txtPlat.setForeground(new java.awt.Color(255, 255, 255));
         txtPlat.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtPlat.setPlaceholder("No Plat");
+        txtPlat.setPlaceholderColor(new java.awt.Color(153, 153, 153));
         txtPlat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPlatActionPerformed(evt);

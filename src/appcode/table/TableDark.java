@@ -71,7 +71,7 @@ public class TableDark extends JTable {
                     table, value, selected, focus, row, column);
 
             setBackground(new Color(102, 102, 102)); // HEADER
-            setForeground(Color.WHITE);
+            setForeground(Color.BLACK);
             setFont(getFont().deriveFont(Font.BOLD, 12));
             setBorder(new EmptyBorder(0, 5, 0, 5));
 
@@ -105,7 +105,7 @@ public class TableDark extends JTable {
                 setBackground(new Color(153, 153, 153)); // semua sama
             }
 
-            setForeground(Color.WHITE);
+            setForeground(Color.BLACK);
             setBorder(new EmptyBorder(0, 5, 0, 5));
 
             setHorizontalAlignment(

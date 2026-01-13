@@ -210,11 +210,11 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         jPanel1.setForeground(new java.awt.Color(102, 102, 102));
 
         txtJudul.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        txtJudul.setForeground(new java.awt.Color(255, 255, 255));
+        txtJudul.setForeground(new java.awt.Color(0, 0, 0));
         txtJudul.setText("Tambah Empty Queue");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Truck");
 
         btnSave.setBackground(new java.awt.Color(0, 91, 99));
@@ -227,7 +227,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         });
 
         cmbTruk.setBackground(new java.awt.Color(102, 102, 102));
-        cmbTruk.setForeground(new java.awt.Color(255, 255, 255));
+        cmbTruk.setForeground(new java.awt.Color(0, 0, 0));
         cmbTruk.setArrowColor(new java.awt.Color(204, 213, 209));
         cmbTruk.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         cmbTruk.addActionListener(new java.awt.event.ActionListener() {
@@ -237,13 +237,14 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         });
 
         txtTanggalKosong.setBackground(new java.awt.Color(102, 102, 102));
-        txtTanggalKosong.setForeground(new java.awt.Color(255, 255, 255));
+        txtTanggalKosong.setForeground(new java.awt.Color(0, 0, 0));
         txtTanggalKosong.setDateFormatString("d MMMM yyyy");
         txtTanggalKosong.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtTanggalKosong.setPlaceholderColor(new java.awt.Color(153, 153, 153));
         txtTanggalKosong.setPreferredSize(new java.awt.Dimension(45, 35));
 
         cmbDriver.setBackground(new java.awt.Color(102, 102, 102));
-        cmbDriver.setForeground(new java.awt.Color(255, 255, 255));
+        cmbDriver.setForeground(new java.awt.Color(0, 0, 0));
         cmbDriver.setArrowColor(new java.awt.Color(204, 213, 209));
         cmbDriver.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         cmbDriver.addActionListener(new java.awt.event.ActionListener() {
@@ -253,27 +254,28 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         });
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Driver");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Catatan");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Tanggal Kosong");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Bukti Kosong");
 
         txtCatatan.setBackground(new java.awt.Color(102, 102, 102));
         txtCatatan.setColumns(20);
-        txtCatatan.setForeground(new java.awt.Color(255, 255, 255));
+        txtCatatan.setForeground(new java.awt.Color(0, 0, 0));
         txtCatatan.setRows(5);
         txtCatatan.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtCatatan.setPlaceholder("Catatan");
+        txtCatatan.setPlaceholderColor(new java.awt.Color(153, 153, 153));
         jScrollPane1.setViewportView(txtCatatan);
 
         imgBukti.setForeground(new java.awt.Color(102, 102, 102));
@@ -290,7 +292,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         );
 
         cmbStatus.setBackground(new java.awt.Color(102, 102, 102));
-        cmbStatus.setForeground(new java.awt.Color(255, 255, 255));
+        cmbStatus.setForeground(new java.awt.Color(0, 0, 0));
         cmbStatus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "WAITING", "ASSIGNED", "CANCELLED" }));
         cmbStatus.setArrowColor(new java.awt.Color(204, 213, 209));
         cmbStatus.setEnabled(false);
@@ -307,7 +309,7 @@ public class DialogEmptyQueueAddEdit extends javax.swing.JDialog {
         });
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Status");
 
         btnAssigned.setBackground(new java.awt.Color(0, 91, 99));

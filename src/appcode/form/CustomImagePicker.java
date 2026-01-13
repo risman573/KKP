@@ -14,7 +14,7 @@ public class CustomImagePicker extends JPanel {
     private Image previewImage;
 
     private String placeholder = "Klik untuk pilih gambar…";
-    private Color placeholderColor = new Color(204, 204, 204);
+    private Color placeholderColor = new Color(153, 153, 153);
     private int borderRadius = 18;
     private Color borderColor = new Color(142, 142, 142);
     private Color borderFocusColor = new Color(4, 88, 167);

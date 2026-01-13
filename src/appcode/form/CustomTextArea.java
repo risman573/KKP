@@ -8,17 +8,17 @@ public class CustomTextArea extends JTextArea {
 
     private int borderRadius = 15;
     private String placeholder = "";
-    private Color placeholderColor = new Color(204, 204, 204);
+    private Color placeholderColor = new Color(0, 0, 0);
 
     public CustomTextArea() {
         setOpaque(false);
         setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        setCaretColor(Color.WHITE);
+        setCaretColor(Color.BLACK);
         setLineWrap(true);
         setWrapStyleWord(true);
         
         // Important to prevent white edges
-        setBackground(new Color(255, 255, 255));
+        setBackground(new Color(0, 0, 0));
         
         // Set viewport to non-opaque for JScrollPane
         setUI(new javax.swing.plaf.basic.BasicTextAreaUI());

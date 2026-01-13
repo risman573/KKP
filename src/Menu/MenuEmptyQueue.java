@@ -111,7 +111,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Queue Waiting");
 
         tblDataWaiting.setModel(new javax.swing.table.DefaultTableModel(
@@ -206,20 +206,20 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             panelWaitingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWaitingLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panelWaitingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane2)
-                    .addGroup(panelWaitingLayout.createSequentialGroup()
-                        .addGap(0, 437, Short.MAX_VALUE)
-                        .addComponent(txtSearchWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnAddWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnReport1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 903, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(panelWaitingLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWaitingLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(txtSearchWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnAddWaiting, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnReport1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(137, 137, 137))
         );
         panelWaitingLayout.setVerticalGroup(
             panelWaitingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,7 +243,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Delivery Order");
 
         tblDataAssigned.setModel(new javax.swing.table.DefaultTableModel(
@@ -309,7 +309,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             }
         });
 
-        txtSearchAssigned.setBackground(new java.awt.Color(138, 138, 138));
+        txtSearchAssigned.setBackground(new java.awt.Color(102, 102, 102));
         txtSearchAssigned.setForeground(new java.awt.Color(255, 255, 255));
         txtSearchAssigned.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSearchAssigned.setPlaceholder("Cari");
@@ -330,8 +330,9 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                     .addGroup(panelAssignedLayout.createSequentialGroup()
                         .addGap(0, 433, Short.MAX_VALUE)
                         .addComponent(txtSearchAssigned, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(133, 133, 133)
-                        .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(127, 127, 127)))
                 .addContainerGap())
             .addGroup(panelAssignedLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
@@ -360,7 +361,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Cancel");
 
         tblDataCancelled.setModel(new javax.swing.table.DefaultTableModel(
@@ -426,7 +427,7 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
             }
         });
 
-        txtSearchCancelled.setBackground(new java.awt.Color(138, 138, 138));
+        txtSearchCancelled.setBackground(new java.awt.Color(102, 102, 102));
         txtSearchCancelled.setForeground(new java.awt.Color(255, 255, 255));
         txtSearchCancelled.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtSearchCancelled.setPlaceholder("Cari");
@@ -451,8 +452,9 @@ public class MenuEmptyQueue extends javax.swing.JPanel {
                     .addGroup(panelCancelledLayout.createSequentialGroup()
                         .addGap(0, 433, Short.MAX_VALUE)
                         .addComponent(txtSearchCancelled, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(133, 133, 133)
-                        .addComponent(btnReport2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnReport2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(127, 127, 127)))
                 .addContainerGap())
         );
         panelCancelledLayout.setVerticalGroup(
