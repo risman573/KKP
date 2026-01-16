@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Main;
 
 import Auth.Login;
@@ -26,9 +21,6 @@ import java.awt.Color;
 
 public class MainPage extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Login
-     */
     private Connection conn = new Koneksi().connect();
     String fullName = "";
     private enum ListMenu {
@@ -536,7 +528,6 @@ public class MainPage extends javax.swing.JFrame {
             new Login().setVisible(true);
             dispose();
         }
-
     }//GEN-LAST:event_btnLogoutMouseClicked
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened

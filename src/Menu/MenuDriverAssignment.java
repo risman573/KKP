@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Menu;
 
 import Main.MainPage;
@@ -34,10 +29,7 @@ import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
 public class MenuDriverAssignment extends javax.swing.JPanel {
-
-    /**
-     * Creates new form MenuHome
-     */
+    
     DefaultTableModel model;
     Connection conn = new Koneksi().connect();
     public MenuDriverAssignment() {
